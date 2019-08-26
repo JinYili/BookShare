@@ -1,0 +1,20 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iis": {
+      "applicationUrl": "http://localhost/BookShare",
+      "sslPort": 0
+    },
+    "iisExpress": {
+      "applicationUrl": "http://localhost:57526/",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "BookShare": {
+      "commandName": "Project",
+      "launchBrowser": true
+    }
+  }
+}

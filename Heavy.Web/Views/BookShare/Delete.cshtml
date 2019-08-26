@@ -1,0 +1,16 @@
+﻿@model Book
+@{
+    ViewBag.Title = "Delete confirmation";
+}
+
+<h2>Confirm to delete?</h2>
+<h2>@Model.Title by @Model.Author @@ @Model.ReleaseDate.ToString("yyyy-MM-dd")?</h2>
+<form method="post">
+    <div class="form-group row">
+        <div class="col-sm-12">
+            <button type="submit" class="btn btn-danger">Delete</button>
+            <a asp-action="Index" class="btn btn-secondary">Back</a>
+        </div>
+    </div>
+</form>
+

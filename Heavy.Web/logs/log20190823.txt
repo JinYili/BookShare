@@ -1,0 +1,1088 @@
+2019-08-23 20:04:59.947 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-23 20:05:01.992 +03:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-08-23 20:05:02.170 +03:00 [INF] User profile is available. Using 'C:\Users\yilij\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-23 20:05:03.889 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-23 20:05:04.036 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-23 20:05:04.068 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookShare.Web.Controllers.HomeController (Heavy.Web).
+2019-08-23 20:05:04.093 +03:00 [INF] Executing action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-23 20:05:04.097 +03:00 [INF] Visiting Home Index..
+2019-08-23 20:05:04.104 +03:00 [INF] Executed action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4.792ms.
+2019-08-23 20:05:04.155 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-23 20:05:04.742 +03:00 [INF] Executed ViewResult - view Index executed in 620.38700000000006ms.
+2019-08-23 20:05:04.776 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.css  
+2019-08-23 20:05:04.776 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css  
+2019-08-23 20:05:04.788 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.js  
+2019-08-23 20:05:04.786 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.js  
+2019-08-23 20:05:04.789 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery-validation/dist/jquery.validate.js  
+2019-08-23 20:05:04.791 +03:00 [INF] Executed action BookShare.Web.Controllers.HomeController.Index (Heavy.Web) in 719.1707ms
+2019-08-23 20:05:04.801 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-23 20:05:04.817 +03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\css\site.css'
+2019-08-23 20:05:04.822 +03:00 [INF] Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\jquery-validation\dist\jquery.validate.js'
+2019-08-23 20:05:04.823 +03:00 [INF] Request finished in 46.8978ms 200 text/css
+2019-08-23 20:05:04.825 +03:00 [INF] Request finished in 36.2406ms 200 application/javascript
+2019-08-23 20:05:04.830 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js  
+2019-08-23 20:05:04.836 +03:00 [INF] Sending file. Request path: '/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js'
+2019-08-23 20:05:04.837 +03:00 [INF] Request finished in 951.3604ms 200 text/html; charset=utf-8
+2019-08-23 20:05:04.839 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+2019-08-23 20:05:04.841 +03:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\jquery\dist\jquery.js'
+2019-08-23 20:05:04.842 +03:00 [INF] Request finished in 11.9678ms 200 application/javascript
+2019-08-23 20:05:04.837 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/mine/my1.js  
+2019-08-23 20:05:04.846 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/site.js  
+2019-08-23 20:05:04.851 +03:00 [INF] Request finished in 75.3763ms 200 text/css
+2019-08-23 20:05:04.853 +03:00 [INF] Request finished in 67.0059ms 200 application/javascript
+2019-08-23 20:05:04.855 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY  
+2019-08-23 20:05:04.857 +03:00 [INF] Sending file. Request path: '/js/mine/my1.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\js\mine\my1.js'
+2019-08-23 20:05:04.862 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/mine/my2.js  
+2019-08-23 20:05:04.862 +03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\js\site.js'
+2019-08-23 20:05:04.864 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/mine/my3.js  
+2019-08-23 20:05:04.871 +03:00 [INF] Request finished in 34.077ms 200 application/javascript
+2019-08-23 20:05:04.875 +03:00 [INF] Request finished in 28.6227ms 200 application/javascript
+2019-08-23 20:05:04.873 +03:00 [INF] Sending file. Request path: '/js/mine/my2.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\js\mine\my2.js'
+2019-08-23 20:05:04.867 +03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\js\site.js'
+2019-08-23 20:05:04.853 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js'
+2019-08-23 20:05:04.878 +03:00 [INF] Sending file. Request path: '/js/mine/my3.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\js\mine\my3.js'
+2019-08-23 20:05:04.886 +03:00 [INF] Request finished in 23.809ms 200 application/javascript
+2019-08-23 20:05:04.890 +03:00 [INF] Request finished in 34.6028ms 200 application/javascript
+2019-08-23 20:05:04.893 +03:00 [INF] Request finished in 104.8818ms 200 application/javascript
+2019-08-23 20:05:04.896 +03:00 [INF] Request finished in 31.3815ms 200 application/javascript
+2019-08-23 20:05:12.090 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/ViewGun/1  
+2019-08-23 20:05:12.102 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web)'
+2019-08-23 20:05:12.132 +03:00 [INF] Route matched with {action = "ViewGun", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ViewGun(Int32) on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-23 20:05:12.152 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web) - Validation state: "Valid"
+2019-08-23 20:05:12.165 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-23 20:05:12.364 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Title], [x].[Artist], [x].[CoverUrl], [x].[ReleaseDate], [x].[Price]
+FROM [Albums] AS [x]
+WHERE [x].[Id] = @__id_0
+ORDER BY [x].[Id]
+2019-08-23 20:05:12.421 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x.Comments].[Id], [x.Comments].[Content], [x.Comments].[CreateDate], [x.Comments].[albumId], [t].[Id]
+FROM [Comments] AS [x.Comments]
+INNER JOIN (
+    SELECT TOP(1) [x0].[Id]
+    FROM [Albums] AS [x0]
+    WHERE [x0].[Id] = @__id_0
+    ORDER BY [x0].[Id]
+) AS [t] ON [x.Comments].[albumId] = [t].[Id]
+WHERE [x.Comments].[albumId] = @__id_0
+ORDER BY [t].[Id], [x.Comments].[CreateDate] DESC
+2019-08-23 20:05:12.498 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 344.4278ms.
+2019-08-23 20:05:12.510 +03:00 [INF] Executing JsonResult, writing value of type 'BookShare.Web.Models.Album'.
+2019-08-23 20:05:12.596 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web) in 460.8192ms
+2019-08-23 20:05:12.598 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web)'
+2019-08-23 20:05:12.600 +03:00 [INF] Request finished in 509.6623ms 200 application/json; charset=utf-8
+2019-08-23 20:05:34.852 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/ListGunsComments  
+2019-08-23 20:05:34.861 +03:00 [INF] Request finished in 8.8082ms 404 text/plain
+2019-08-23 20:05:51.788 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/AllGunsWithComments  
+2019-08-23 20:05:51.790 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web)'
+2019-08-23 20:05:51.802 +03:00 [INF] Route matched with {action = "ListGunsComments", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ListGunsComments() on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-23 20:05:51.809 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web) - Validation state: "Valid"
+2019-08-23 20:05:51.819 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-23 20:05:51.879 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Artist], [x].[CoverUrl], [x].[Price], [x].[ReleaseDate], [x].[Title]
+FROM [Albums] AS [x]
+ORDER BY [x].[Id]
+2019-08-23 20:05:51.935 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x.Comments].[Id], [x.Comments].[Content], [x.Comments].[CreateDate], [x.Comments].[albumId]
+FROM [Comments] AS [x.Comments]
+INNER JOIN (
+    SELECT [x0].[Id]
+    FROM [Albums] AS [x0]
+) AS [t] ON [x.Comments].[albumId] = [t].[Id]
+ORDER BY [t].[Id]
+2019-08-23 20:05:51.968 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 153.8486ms.
+2019-08-23 20:05:51.973 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Album, Heavy.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-23 20:05:51.989 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web) in 182.16590000000002ms
+2019-08-23 20:05:51.993 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web)'
+2019-08-23 20:05:52.002 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'album' with type 'BookShare.Web.Models.Album'. Path '[0].comments[0]'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-08-23 20:05:52.123 +03:00 [WRN] The response has already started, the error page middleware will not be executed.
+2019-08-23 20:05:52.126 +03:00 [ERR] Connection id "0HLP7TG53K9F6", Request id "0HLP7TG53K9F6:00000003": An unhandled exception was thrown by the application.
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'album' with type 'BookShare.Web.Models.Album'. Path '[0].comments[0]'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-08-23 20:05:52.170 +03:00 [INF] Request finished in 382.1867ms 200 application/json; charset=utf-8
+2019-08-23 20:06:10.116 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/AllGunsWithComments  
+2019-08-23 20:06:10.118 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web)'
+2019-08-23 20:06:10.120 +03:00 [INF] Route matched with {action = "ListGunsComments", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ListGunsComments() on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-23 20:06:10.125 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web) - Validation state: "Valid"
+2019-08-23 20:06:19.749 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-23 20:06:19.754 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Artist], [x].[CoverUrl], [x].[Price], [x].[ReleaseDate], [x].[Title]
+FROM [Albums] AS [x]
+ORDER BY [x].[Id]
+2019-08-23 20:06:19.798 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x.Comments].[Id], [x.Comments].[Content], [x.Comments].[CreateDate], [x.Comments].[albumId]
+FROM [Comments] AS [x.Comments]
+INNER JOIN (
+    SELECT [x0].[Id]
+    FROM [Albums] AS [x0]
+) AS [t] ON [x.Comments].[albumId] = [t].[Id]
+ORDER BY [t].[Id]
+2019-08-23 20:07:10.421 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 60290.4743ms.
+2019-08-23 20:07:10.428 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Album, Heavy.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-23 20:07:10.437 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web) in 60311.760800000004ms
+2019-08-23 20:07:10.438 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web)'
+2019-08-23 20:07:10.443 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'album' with type 'BookShare.Web.Models.Album'. Path '[0].comments[0]'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-08-23 20:07:10.475 +03:00 [WRN] The response has already started, the error page middleware will not be executed.
+2019-08-23 20:07:10.477 +03:00 [ERR] Connection id "0HLP7TG53K9F8", Request id "0HLP7TG53K9F8:00000001": An unhandled exception was thrown by the application.
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'album' with type 'BookShare.Web.Models.Album'. Path '[0].comments[0]'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-08-23 20:07:10.509 +03:00 [INF] Request finished in 60392.3561ms 200 application/json; charset=utf-8
+2019-08-23 20:08:25.618 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-23 20:08:26.034 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-08-23 20:08:26.123 +03:00 [INF] User profile is available. Using 'C:\Users\yilij\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-23 20:08:27.413 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-23 20:08:27.516 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-23 20:08:27.542 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookShare.Web.Controllers.HomeController (Heavy.Web).
+2019-08-23 20:08:27.560 +03:00 [INF] Executing action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-23 20:08:27.563 +03:00 [INF] Visiting Home Index..
+2019-08-23 20:08:27.567 +03:00 [INF] Executed action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.0385ms.
+2019-08-23 20:08:27.600 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-23 20:08:28.200 +03:00 [INF] Executed ViewResult - view Index executed in 617.7457ms.
+2019-08-23 20:08:28.219 +03:00 [INF] Executed action BookShare.Web.Controllers.HomeController.Index (Heavy.Web) in 673.28770000000009ms
+2019-08-23 20:08:28.226 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-23 20:08:28.252 +03:00 [INF] Request finished in 839.7152ms 200 text/html; charset=utf-8
+2019-08-23 20:08:37.417 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/AllGunsWithComments  
+2019-08-23 20:08:37.426 +03:00 [INF] Request finished in 8.7232ms 404 text/plain
+2019-08-23 20:08:50.869 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/ViewGun/1  
+2019-08-23 20:08:50.875 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web)'
+2019-08-23 20:08:50.897 +03:00 [INF] Route matched with {action = "ViewGun", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ViewGun(Int32) on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-23 20:08:50.916 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web) - Validation state: "Valid"
+2019-08-23 20:08:50.930 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-23 20:08:51.097 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Title], [x].[Artist], [x].[CoverUrl], [x].[ReleaseDate], [x].[Price]
+FROM [Albums] AS [x]
+WHERE [x].[Id] = @__id_0
+ORDER BY [x].[Id]
+2019-08-23 20:08:51.145 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x.Comments].[Id], [x.Comments].[Content], [x.Comments].[CreateDate], [x.Comments].[albumId], [t].[Id]
+FROM [Comments] AS [x.Comments]
+INNER JOIN (
+    SELECT TOP(1) [x0].[Id]
+    FROM [Albums] AS [x0]
+    WHERE [x0].[Id] = @__id_0
+    ORDER BY [x0].[Id]
+) AS [t] ON [x.Comments].[albumId] = [t].[Id]
+WHERE [x.Comments].[albumId] = @__id_0
+ORDER BY [t].[Id], [x.Comments].[CreateDate] DESC
+2019-08-23 20:08:51.212 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 293.4248ms.
+2019-08-23 20:08:51.223 +03:00 [INF] Executing JsonResult, writing value of type 'BookShare.Web.Models.Album'.
+2019-08-23 20:08:51.294 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web) in 393.27180000000004ms
+2019-08-23 20:08:51.296 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web)'
+2019-08-23 20:08:51.298 +03:00 [INF] Request finished in 429.2703ms 200 application/json; charset=utf-8
+2019-08-23 20:09:07.116 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/AllInfo  
+2019-08-23 20:09:07.118 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web)'
+2019-08-23 20:09:07.131 +03:00 [INF] Route matched with {action = "ListGunsComments", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ListGunsComments() on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-23 20:09:07.135 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web) - Validation state: "Valid"
+2019-08-23 20:09:09.764 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-23 20:09:09.815 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Artist], [x].[CoverUrl], [x].[Price], [x].[ReleaseDate], [x].[Title]
+FROM [Albums] AS [x]
+ORDER BY [x].[Id]
+2019-08-23 20:09:09.867 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x.Comments].[Id], [x.Comments].[Content], [x.Comments].[CreateDate], [x.Comments].[albumId]
+FROM [Comments] AS [x.Comments]
+INNER JOIN (
+    SELECT [x0].[Id]
+    FROM [Albums] AS [x0]
+) AS [t] ON [x.Comments].[albumId] = [t].[Id]
+ORDER BY [t].[Id]
+2019-08-23 20:09:09.899 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 2759.3558000000003ms.
+2019-08-23 20:09:09.902 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Album, Heavy.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-23 20:09:09.910 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web) in 2775.0192ms
+2019-08-23 20:09:09.912 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web)'
+2019-08-23 20:09:09.917 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'album' with type 'BookShare.Web.Models.Album'. Path '[0].comments[0]'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-08-23 20:09:10.002 +03:00 [WRN] The response has already started, the error page middleware will not be executed.
+2019-08-23 20:09:10.004 +03:00 [ERR] Connection id "0HLP7TI1PH0QS", Request id "0HLP7TI1PH0QS:00000003": An unhandled exception was thrown by the application.
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'album' with type 'BookShare.Web.Models.Album'. Path '[0].comments[0]'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-08-23 20:09:10.047 +03:00 [INF] Request finished in 2930.765ms 200 application/json; charset=utf-8
+2019-08-23 20:10:51.388 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-23 20:10:51.814 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-08-23 20:10:51.916 +03:00 [INF] User profile is available. Using 'C:\Users\yilij\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-23 20:10:53.177 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-23 20:10:53.288 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-23 20:10:53.314 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookShare.Web.Controllers.HomeController (Heavy.Web).
+2019-08-23 20:10:53.332 +03:00 [INF] Executing action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-23 20:10:53.335 +03:00 [INF] Visiting Home Index..
+2019-08-23 20:10:53.340 +03:00 [INF] Executed action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.9817ms.
+2019-08-23 20:10:53.366 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-23 20:10:53.972 +03:00 [INF] Executed ViewResult - view Index executed in 619.1871ms.
+2019-08-23 20:10:53.990 +03:00 [INF] Executed action BookShare.Web.Controllers.HomeController.Index (Heavy.Web) in 673.0063ms
+2019-08-23 20:10:53.998 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-23 20:10:54.027 +03:00 [INF] Request finished in 850.5404ms 200 text/html; charset=utf-8
+2019-08-23 20:10:58.562 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/AllInfo  
+2019-08-23 20:10:58.569 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web)'
+2019-08-23 20:10:58.578 +03:00 [INF] Route matched with {action = "ListGunsComments", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ListGunsComments() on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-23 20:10:58.585 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web) - Validation state: "Valid"
+2019-08-23 20:11:03.878 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-23 20:11:04.019 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Artist], [x].[CoverUrl], [x].[Price], [x].[ReleaseDate], [x].[Title]
+FROM [Albums] AS [x]
+ORDER BY [x].[Id]
+2019-08-23 20:11:04.162 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x.Comments].[Id], [x.Comments].[Content], [x.Comments].[CreateDate], [x.Comments].[albumId]
+FROM [Comments] AS [x.Comments]
+INNER JOIN (
+    SELECT [x0].[Id]
+    FROM [Albums] AS [x0]
+) AS [t] ON [x.Comments].[albumId] = [t].[Id]
+ORDER BY [t].[Id]
+2019-08-23 20:11:35.572 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 36984.131ms.
+2019-08-23 20:11:35.584 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Album, Heavy.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-23 20:11:35.658 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web) in 37074.1916ms
+2019-08-23 20:11:35.660 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web)'
+2019-08-23 20:11:35.664 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'album' with type 'BookShare.Web.Models.Album'. Path '[0].comments[0]'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-08-23 20:11:35.737 +03:00 [WRN] The response has already started, the error page middleware will not be executed.
+2019-08-23 20:11:35.739 +03:00 [ERR] Connection id "0HLP7TJD7V7KD", Request id "0HLP7TJD7V7KD:00000001": An unhandled exception was thrown by the application.
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'album' with type 'BookShare.Web.Models.Album'. Path '[0].comments[0]'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-08-23 20:11:35.780 +03:00 [INF] Request finished in 37218.7875ms 200 application/json; charset=utf-8
+2019-08-23 20:11:45.227 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/AllInfo  
+2019-08-23 20:11:45.240 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web)'
+2019-08-23 20:11:45.242 +03:00 [INF] Route matched with {action = "ListGunsComments", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ListGunsComments() on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-23 20:11:45.247 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web) - Validation state: "Valid"
+2019-08-23 20:11:47.653 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-23 20:11:47.660 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Artist], [x].[CoverUrl], [x].[Price], [x].[ReleaseDate], [x].[Title]
+FROM [Albums] AS [x]
+ORDER BY [x].[Id]
+2019-08-23 20:11:47.667 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x.Comments].[Id], [x.Comments].[Content], [x.Comments].[CreateDate], [x.Comments].[albumId]
+FROM [Comments] AS [x.Comments]
+INNER JOIN (
+    SELECT [x0].[Id]
+    FROM [Albums] AS [x0]
+) AS [t] ON [x.Comments].[albumId] = [t].[Id]
+ORDER BY [t].[Id]
+2019-08-23 20:11:47.672 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 2419.8781ms.
+2019-08-23 20:11:47.676 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Album, Heavy.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-23 20:11:47.680 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web) in 2434.2085ms
+2019-08-23 20:11:47.684 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web)'
+2019-08-23 20:11:47.688 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'album' with type 'BookShare.Web.Models.Album'. Path '[0].comments[0]'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-08-23 20:11:47.742 +03:00 [WRN] The response has already started, the error page middleware will not be executed.
+2019-08-23 20:11:47.743 +03:00 [ERR] Connection id "0HLP7TJD7V7KA", Request id "0HLP7TJD7V7KA:00000002": An unhandled exception was thrown by the application.
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'album' with type 'BookShare.Web.Models.Album'. Path '[0].comments[0]'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-08-23 20:11:47.790 +03:00 [INF] Request finished in 2562.964ms 200 application/json; charset=utf-8
+2019-08-23 20:26:46.905 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-23 20:26:48.047 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-08-23 20:26:48.147 +03:00 [INF] User profile is available. Using 'C:\Users\yilij\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-23 20:26:50.069 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-23 20:26:50.189 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-23 20:26:50.217 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookShare.Web.Controllers.HomeController (Heavy.Web).
+2019-08-23 20:26:50.235 +03:00 [INF] Executing action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-23 20:26:50.238 +03:00 [INF] Visiting Home Index..
+2019-08-23 20:26:50.248 +03:00 [INF] Executed action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.903ms.
+2019-08-23 20:26:50.279 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-23 20:26:50.887 +03:00 [INF] Executed ViewResult - view Index executed in 624.5891ms.
+2019-08-23 20:26:50.905 +03:00 [INF] Executed action BookShare.Web.Controllers.HomeController.Index (Heavy.Web) in 685.40870000000007ms
+2019-08-23 20:26:50.918 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-23 20:26:50.951 +03:00 [INF] Request finished in 883.2189ms 200 text/html; charset=utf-8
+2019-08-23 20:27:00.294 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/AllInfo  
+2019-08-23 20:27:00.302 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web)'
+2019-08-23 20:27:00.312 +03:00 [INF] Route matched with {action = "ListGunsComments", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ListGunsComments() on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-23 20:27:00.318 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web) - Validation state: "Valid"
+2019-08-23 20:27:00.329 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-23 20:27:00.493 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Artist], [x].[CoverUrl], [x].[Price], [x].[ReleaseDate], [x].[Title]
+FROM [Albums] AS [x]
+ORDER BY [x].[Id]
+2019-08-23 20:27:00.587 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x.Comments].[Id], [x.Comments].[Content], [x.Comments].[CreateDate], [x.Comments].[albumId]
+FROM [Comments] AS [x.Comments]
+INNER JOIN (
+    SELECT [x0].[Id]
+    FROM [Albums] AS [x0]
+) AS [t] ON [x.Comments].[albumId] = [t].[Id]
+ORDER BY [t].[Id]
+2019-08-23 20:27:00.629 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 308.21270000000004ms.
+2019-08-23 20:27:00.642 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Album, Heavy.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-23 20:27:00.718 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web) in 401.3913ms
+2019-08-23 20:27:00.721 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web)'
+2019-08-23 20:27:00.726 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'album' with type 'BookShare.Web.Models.Album'. Path '[0].comments[0]'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-08-23 20:27:00.809 +03:00 [WRN] The response has already started, the error page middleware will not be executed.
+2019-08-23 20:27:00.812 +03:00 [ERR] Connection id "0HLP7TSA8JM5A", Request id "0HLP7TSA8JM5A:00000001": An unhandled exception was thrown by the application.
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'album' with type 'BookShare.Web.Models.Album'. Path '[0].comments[0]'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-08-23 20:27:00.852 +03:00 [INF] Request finished in 557.9376ms 200 application/json; charset=utf-8
+2019-08-23 20:27:16.322 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/AllGuns  
+2019-08-23 20:27:16.328 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web)'
+2019-08-23 20:27:16.335 +03:00 [INF] Route matched with {action = "ListGuns", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ListGuns() on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-23 20:27:16.339 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web) - Validation state: "Valid"
+2019-08-23 20:27:16.347 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-23 20:27:16.360 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-08-23 20:27:16.366 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 22.738200000000003ms.
+2019-08-23 20:27:16.371 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Album, Heavy.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-23 20:27:16.375 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web) in 37.2915ms
+2019-08-23 20:27:16.377 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web)'
+2019-08-23 20:27:16.385 +03:00 [INF] Request finished in 63.459ms 200 application/json; charset=utf-8
+2019-08-23 20:27:26.500 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/AllComment  
+2019-08-23 20:27:26.502 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ListComments (Heavy.Web)'
+2019-08-23 20:27:26.508 +03:00 [INF] Route matched with {action = "ListComments", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ListComments() on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-23 20:27:26.513 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ListComments (Heavy.Web) - Validation state: "Valid"
+2019-08-23 20:27:26.519 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-23 20:27:26.533 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Content], [c].[CreateDate], [c].[albumId]
+FROM [Comments] AS [c]
+2019-08-23 20:27:26.539 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ListComments (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 23.4924ms.
+2019-08-23 20:27:26.543 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Comment, Heavy.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-23 20:27:26.545 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ListComments (Heavy.Web) in 31.680200000000003ms
+2019-08-23 20:27:26.546 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ListComments (Heavy.Web)'
+2019-08-23 20:27:26.549 +03:00 [INF] Request finished in 48.6191ms 200 application/json; charset=utf-8
+2019-08-23 20:55:03.936 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-23 20:55:05.473 +03:00 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-08-23 20:55:05.588 +03:00 [INF] User profile is available. Using 'C:\Users\yilij\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-23 20:55:07.105 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-23 20:55:07.242 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-23 20:55:07.271 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookShare.Web.Controllers.HomeController (Heavy.Web).
+2019-08-23 20:55:07.291 +03:00 [INF] Executing action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-23 20:55:07.294 +03:00 [INF] Visiting Home Index..
+2019-08-23 20:55:07.302 +03:00 [INF] Executed action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4.061ms.
+2019-08-23 20:55:07.342 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-23 20:55:08.080 +03:00 [INF] Executed ViewResult - view Index executed in 759.9741ms.
+2019-08-23 20:55:08.106 +03:00 [INF] Executed action BookShare.Web.Controllers.HomeController.Index (Heavy.Web) in 829.48160000000007ms
+2019-08-23 20:55:08.123 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-23 20:55:08.151 +03:00 [INF] Request finished in 1048.181ms 200 text/html; charset=utf-8
+2019-08-23 20:58:02.733 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/AllComment  
+2019-08-23 20:58:02.745 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ListComments (Heavy.Web)'
+2019-08-23 20:58:02.753 +03:00 [INF] Route matched with {action = "ListComments", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ListComments() on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-23 20:58:02.757 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ListComments (Heavy.Web) - Validation state: "Valid"
+2019-08-23 20:58:02.766 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-23 20:58:02.829 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Content], [c].[CreateDate], [c].[albumId]
+FROM [Comments] AS [c]
+2019-08-23 20:58:02.897 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ListComments (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 137.3197ms.
+2019-08-23 20:58:02.909 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Comment, Heavy.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-23 20:58:02.978 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ListComments (Heavy.Web) in 221.72920000000002ms
+2019-08-23 20:58:02.981 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ListComments (Heavy.Web)'
+2019-08-23 20:58:02.984 +03:00 [INF] Request finished in 250.8648ms 200 application/json; charset=utf-8
+2019-08-23 20:58:16.126 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/ViewGunComment/2  
+2019-08-23 20:58:16.134 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ViewGunComment (Heavy.Web)'
+2019-08-23 20:58:16.157 +03:00 [INF] Route matched with {action = "ViewGunComment", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ViewGunComment(Int32) on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-23 20:58:16.180 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ViewGunComment (Heavy.Web) - Validation state: "Valid"
+2019-08-23 20:58:16.188 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-23 20:58:16.229 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Content], [x].[CreateDate], [x].[albumId]
+FROM [Comments] AS [x]
+WHERE [x].[albumId] = @__id_0
+2019-08-23 20:58:16.236 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ViewGunComment (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 51.9373ms.
+2019-08-23 20:58:16.239 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Comment, Heavy.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-23 20:58:16.242 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ViewGunComment (Heavy.Web) in 80.9359ms
+2019-08-23 20:58:16.244 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ViewGunComment (Heavy.Web)'
+2019-08-23 20:58:16.246 +03:00 [INF] Request finished in 119.7953ms 200 application/json; charset=utf-8
+2019-08-23 20:58:20.080 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/ViewGunComment/1  
+2019-08-23 20:58:20.082 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ViewGunComment (Heavy.Web)'
+2019-08-23 20:58:20.084 +03:00 [INF] Route matched with {action = "ViewGunComment", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ViewGunComment(Int32) on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-23 20:58:20.090 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ViewGunComment (Heavy.Web) - Validation state: "Valid"
+2019-08-23 20:58:20.094 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-23 20:58:20.103 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Content], [x].[CreateDate], [x].[albumId]
+FROM [Comments] AS [x]
+WHERE [x].[albumId] = @__id_0
+2019-08-23 20:58:20.108 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ViewGunComment (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 14.465ms.
+2019-08-23 20:58:20.112 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Comment, Heavy.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-23 20:58:20.114 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ViewGunComment (Heavy.Web) in 25.021600000000003ms
+2019-08-23 20:58:20.116 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ViewGunComment (Heavy.Web)'
+2019-08-23 20:58:20.119 +03:00 [INF] Request finished in 38.7658ms 200 application/json; charset=utf-8
+2019-08-23 20:58:26.305 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/AllGuns  
+2019-08-23 20:58:26.307 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web)'
+2019-08-23 20:58:26.313 +03:00 [INF] Route matched with {action = "ListGuns", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ListGuns() on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-23 20:58:26.318 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web) - Validation state: "Valid"
+2019-08-23 20:58:26.324 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-23 20:58:26.342 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-08-23 20:58:26.364 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 43.2507ms.
+2019-08-23 20:58:26.368 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Album, Heavy.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-23 20:58:26.375 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web) in 56.9761ms
+2019-08-23 20:58:26.377 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web)'
+2019-08-23 20:58:26.379 +03:00 [INF] Request finished in 73.9706ms 200 application/json; charset=utf-8
+2019-08-23 20:58:34.034 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/AllInfo  
+2019-08-23 20:58:34.035 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web)'
+2019-08-23 20:58:34.043 +03:00 [INF] Route matched with {action = "ListGunsComments", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ListGunsComments() on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-23 20:58:34.048 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web) - Validation state: "Valid"
+2019-08-23 20:58:34.058 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-23 20:58:34.149 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Artist], [x].[CoverUrl], [x].[Price], [x].[ReleaseDate], [x].[Title]
+FROM [Albums] AS [x]
+ORDER BY [x].[Id]
+2019-08-23 20:58:34.180 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x.Comments].[Id], [x.Comments].[Content], [x.Comments].[CreateDate], [x.Comments].[albumId]
+FROM [Comments] AS [x.Comments]
+INNER JOIN (
+    SELECT [x0].[Id]
+    FROM [Albums] AS [x0]
+) AS [t] ON [x.Comments].[albumId] = [t].[Id]
+ORDER BY [t].[Id]
+2019-08-23 20:58:34.204 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 152.4759ms.
+2019-08-23 20:58:34.208 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Album, Heavy.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-23 20:58:34.215 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web) in 166.3732ms
+2019-08-23 20:58:34.217 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web)'
+2019-08-23 20:58:34.222 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'album' with type 'BookShare.Web.Models.Album'. Path '[0].comments[0]'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-08-23 20:58:34.301 +03:00 [WRN] The response has already started, the error page middleware will not be executed.
+2019-08-23 20:58:34.304 +03:00 [ERR] Connection id "0HLP7UC43U8LS", Request id "0HLP7UC43U8LS:00000005": An unhandled exception was thrown by the application.
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'album' with type 'BookShare.Web.Models.Album'. Path '[0].comments[0]'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor.ExecuteAsync(ActionContext context, JsonResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-08-23 20:58:34.341 +03:00 [INF] Request finished in 307.5482ms 200 application/json; charset=utf-8
+2019-08-23 21:44:54.573 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-23 21:44:55.846 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-08-23 21:44:55.945 +03:00 [INF] User profile is available. Using 'C:\Users\yilij\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-23 21:44:57.522 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-23 21:44:57.623 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-23 21:44:57.650 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookShare.Web.Controllers.HomeController (Heavy.Web).
+2019-08-23 21:44:57.668 +03:00 [INF] Executing action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-23 21:44:57.672 +03:00 [INF] Visiting Home Index..
+2019-08-23 21:44:57.680 +03:00 [INF] Executed action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4.0864ms.
+2019-08-23 21:44:57.717 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-23 21:44:58.309 +03:00 [INF] Executed ViewResult - view Index executed in 615.5326ms.
+2019-08-23 21:44:58.328 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.css  
+2019-08-23 21:44:58.342 +03:00 [INF] Executed action BookShare.Web.Controllers.HomeController.Index (Heavy.Web) in 688.66410000000008ms
+2019-08-23 21:44:58.353 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.js  
+2019-08-23 21:44:58.353 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css  
+2019-08-23 21:44:58.371 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-23 21:44:58.369 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.js  
+2019-08-23 21:44:58.373 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery-validation/dist/jquery.validate.js  
+2019-08-23 21:44:58.399 +03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\css\site.css'
+2019-08-23 21:44:58.403 +03:00 [INF] Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\jquery-validation\dist\jquery.validate.js'
+2019-08-23 21:44:58.404 +03:00 [INF] Request finished in 50.82ms 200 text/css
+2019-08-23 21:44:58.407 +03:00 [INF] Request finished in 34.0056ms 200 application/javascript
+2019-08-23 21:44:58.414 +03:00 [INF] Request finished in 893.8719ms 200 text/html; charset=utf-8
+2019-08-23 21:44:58.409 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js  
+2019-08-23 21:44:58.423 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/site.js  
+2019-08-23 21:44:58.421 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/mine/my1.js  
+2019-08-23 21:44:58.427 +03:00 [INF] Sending file. Request path: '/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js'
+2019-08-23 21:44:58.431 +03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\js\site.js'
+2019-08-23 21:44:58.440 +03:00 [INF] Request finished in 30.8014ms 200 application/javascript
+2019-08-23 21:44:58.436 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+2019-08-23 21:44:58.437 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js'
+2019-08-23 21:44:58.439 +03:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\jquery\dist\jquery.js'
+2019-08-23 21:44:58.435 +03:00 [INF] Sending file. Request path: '/js/mine/my1.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\js\mine\my1.js'
+2019-08-23 21:44:58.444 +03:00 [INF] Request finished in 21.6246ms 200 application/javascript
+2019-08-23 21:44:58.448 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/mine/my2.js  
+2019-08-23 21:44:58.451 +03:00 [INF] Request finished in 123.1173ms 200 text/css
+2019-08-23 21:44:58.461 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/mine/my3.js  
+2019-08-23 21:44:58.454 +03:00 [INF] Request finished in 84.9971ms 200 application/javascript
+2019-08-23 21:44:58.464 +03:00 [INF] Sending file. Request path: '/js/mine/my2.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\js\mine\my2.js'
+2019-08-23 21:44:58.464 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY  
+2019-08-23 21:44:58.457 +03:00 [INF] Request finished in 104.5142ms 200 application/javascript
+2019-08-23 21:44:58.472 +03:00 [INF] Request finished in 23.8462ms 200 application/javascript
+2019-08-23 21:44:58.467 +03:00 [INF] Sending file. Request path: '/js/mine/my3.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\js\mine\my3.js'
+2019-08-23 21:44:58.459 +03:00 [INF] Request finished in 37.8384ms 200 application/javascript
+2019-08-23 21:44:58.475 +03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\js\site.js'
+2019-08-23 21:44:58.483 +03:00 [INF] Request finished in 21.9507ms 200 application/javascript
+2019-08-23 21:44:58.486 +03:00 [INF] Request finished in 21.8555ms 200 application/javascript
+2019-08-23 21:45:01.864 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/AllGuns  
+2019-08-23 21:45:01.871 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web)'
+2019-08-23 21:45:01.883 +03:00 [INF] Route matched with {action = "ListGuns", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ListGuns() on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-23 21:45:01.888 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web) - Validation state: "Valid"
+2019-08-23 21:45:01.897 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-23 21:45:01.963 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-08-23 21:45:02.040 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 149.73180000000002ms.
+2019-08-23 21:45:02.051 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Album, Heavy.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-23 21:45:02.131 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web) in 244.6062ms
+2019-08-23 21:45:02.133 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web)'
+2019-08-23 21:45:02.136 +03:00 [INF] Request finished in 271.8674ms 200 application/json; charset=utf-8
+2019-08-23 21:45:04.829 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/AllInfo  
+2019-08-23 21:45:04.836 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web)'
+2019-08-23 21:45:04.842 +03:00 [INF] Route matched with {action = "ListGunsComments", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ListGunsComments() on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-23 21:45:04.848 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web) - Validation state: "Valid"
+2019-08-23 21:45:04.854 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-23 21:45:04.867 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-08-23 21:45:04.872 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 20.4063ms.
+2019-08-23 21:45:04.874 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Album, Heavy.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-23 21:45:04.877 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web) in 29.4737ms
+2019-08-23 21:45:04.880 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web)'
+2019-08-23 21:45:04.882 +03:00 [INF] Request finished in 53.3833ms 200 application/json; charset=utf-8
+2019-08-23 21:50:46.564 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-23 21:50:47.716 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-08-23 21:50:47.808 +03:00 [INF] User profile is available. Using 'C:\Users\yilij\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-23 21:50:48.865 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-23 21:50:48.996 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-23 21:50:49.021 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookShare.Web.Controllers.HomeController (Heavy.Web).
+2019-08-23 21:50:49.038 +03:00 [INF] Executing action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-23 21:50:49.042 +03:00 [INF] Visiting Home Index..
+2019-08-23 21:50:49.048 +03:00 [INF] Executed action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3.0978000000000003ms.
+2019-08-23 21:50:49.082 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-23 21:50:49.637 +03:00 [INF] Executed ViewResult - view Index executed in 575.8771ms.
+2019-08-23 21:50:49.658 +03:00 [INF] Executed action BookShare.Web.Controllers.HomeController.Index (Heavy.Web) in 632.9882ms
+2019-08-23 21:50:49.671 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.css  
+2019-08-23 21:50:49.679 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.js  
+2019-08-23 21:50:49.666 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css  
+2019-08-23 21:50:49.681 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.js  
+2019-08-23 21:50:49.684 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery-validation/dist/jquery.validate.js  
+2019-08-23 21:50:49.685 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-23 21:50:49.702 +03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\css\site.css'
+2019-08-23 21:50:49.712 +03:00 [INF] Request finished in 44.3728ms 200 text/css
+2019-08-23 21:50:49.714 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js  
+2019-08-23 21:50:49.720 +03:00 [INF] Sending file. Request path: '/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js'
+2019-08-23 21:50:49.720 +03:00 [INF] Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\jquery-validation\dist\jquery.validate.js'
+2019-08-23 21:50:49.727 +03:00 [INF] Request finished in 13.0814ms 200 application/javascript
+2019-08-23 21:50:49.742 +03:00 [INF] Request finished in 877.8266ms 200 text/html; charset=utf-8
+2019-08-23 21:50:49.741 +03:00 [INF] Request finished in 49.2684ms 200 application/javascript
+2019-08-23 21:50:49.752 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/site.js  
+2019-08-23 21:50:49.750 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js'
+2019-08-23 21:50:49.754 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/mine/my1.js  
+2019-08-23 21:50:49.750 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+2019-08-23 21:50:49.761 +03:00 [INF] Request finished in 82.0563ms 200 application/javascript
+2019-08-23 21:50:49.757 +03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\js\site.js'
+2019-08-23 21:50:49.750 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/mine/my2.js  
+2019-08-23 21:50:49.751 +03:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\jquery\dist\jquery.js'
+2019-08-23 21:50:49.767 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY  
+2019-08-23 21:50:49.766 +03:00 [INF] Request finished in 99.4332ms 200 text/css
+2019-08-23 21:50:49.774 +03:00 [INF] Sending file. Request path: '/js/mine/my2.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\js\mine\my2.js'
+2019-08-23 21:50:49.764 +03:00 [INF] Sending file. Request path: '/js/mine/my1.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\js\mine\my1.js'
+2019-08-23 21:50:49.770 +03:00 [INF] Request finished in 18.7519ms 200 application/javascript
+2019-08-23 21:50:49.777 +03:00 [INF] Request finished in 95.7152ms 200 application/javascript
+2019-08-23 21:50:49.782 +03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\js\site.js'
+2019-08-23 21:50:49.783 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/mine/my3.js  
+2019-08-23 21:50:49.786 +03:00 [INF] Request finished in 36.0641ms 200 application/javascript
+2019-08-23 21:50:49.797 +03:00 [INF] Request finished in 29.7995ms 200 application/javascript
+2019-08-23 21:50:49.789 +03:00 [INF] Request finished in 35.4151ms 200 application/javascript
+2019-08-23 21:50:49.799 +03:00 [INF] Sending file. Request path: '/js/mine/my3.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\js\mine\my3.js'
+2019-08-23 21:50:49.808 +03:00 [INF] Request finished in 25.1407ms 200 application/javascript
+2019-08-23 21:51:00.225 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/AllInfo  
+2019-08-23 21:51:00.234 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web)'
+2019-08-23 21:51:00.245 +03:00 [INF] Route matched with {action = "ListGunsComments", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ListGunsComments() on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-23 21:51:00.251 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web) - Validation state: "Valid"
+2019-08-23 21:51:03.930 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-23 21:51:04.062 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Title], [x].[Artist], [x].[CoverUrl], [x].[ReleaseDate], [x].[Price]
+FROM [Albums] AS [x]
+ORDER BY [x].[Id]
+2019-08-23 21:51:04.139 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x.Comments].[Id], [x.Comments].[Content], [x.Comments].[CreateDate], [x.Comments].[albumId], [t].[Id]
+FROM [Comments] AS [x.Comments]
+INNER JOIN (
+    SELECT [x0].[Id]
+    FROM [Albums] AS [x0]
+) AS [t] ON [x.Comments].[albumId] = [t].[Id]
+ORDER BY [t].[Id], [x.Comments].[CreateDate] DESC
+2019-08-23 21:51:29.237 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 28982.5059ms.
+2019-08-23 21:51:29.250 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Album, Heavy.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-23 21:51:29.320 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web) in 29070.421400000003ms
+2019-08-23 21:51:29.323 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ListGunsComments (Heavy.Web)'
+2019-08-23 21:51:29.325 +03:00 [INF] Request finished in 29099.8443ms 200 application/json; charset=utf-8

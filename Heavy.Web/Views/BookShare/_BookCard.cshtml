@@ -1,0 +1,14 @@
+﻿@model Book
+
+<div class="card" style="width: 100%;">
+    <img src="@Model.CoverUrl" class="card-img-top h-75" alt="@Model.Title">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Title</h5>
+        <p class="card-text">
+            by @Html.Raw(@Model.Author) $@Model.Price
+        </p>
+        <a asp-action="Details" asp-route-id="@Model.Id" class="btn btn-secondary">View</a>
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
+        <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
+    </div>
+</div>

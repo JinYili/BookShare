@@ -1,0 +1,1010 @@
+2019-08-20 19:52:33.601 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 19:52:36.467 +03:00 [INF] Executed DbCommand (82ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-08-20 19:52:36.626 +03:00 [INF] User profile is available. Using 'C:\Users\yilij\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-20 19:52:38.431 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-20 19:52:38.550 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-20 19:52:38.594 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookShare.Web.Controllers.HomeController (Heavy.Web).
+2019-08-20 19:52:38.611 +03:00 [INF] Executing action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-20 19:52:38.614 +03:00 [INF] Visiting Home Index..
+2019-08-20 19:52:38.618 +03:00 [INF] Executed action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.8714000000000002ms.
+2019-08-20 19:52:38.648 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-20 19:52:39.221 +03:00 [INF] Executed ViewResult - view Index executed in 590.5592ms.
+2019-08-20 19:52:39.238 +03:00 [INF] Executed action BookShare.Web.Controllers.HomeController.Index (Heavy.Web) in 641.2765ms
+2019-08-20 19:52:39.243 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.css  
+2019-08-20 19:52:39.282 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css  
+2019-08-20 19:52:39.283 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.js  
+2019-08-20 19:52:39.284 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-20 19:52:39.283 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.js  
+2019-08-20 19:52:39.284 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery-validation/dist/jquery.validate.js  
+2019-08-20 19:52:39.310 +03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\css\site.css'
+2019-08-20 19:52:39.315 +03:00 [INF] Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\jquery-validation\dist\jquery.validate.js'
+2019-08-20 19:52:39.315 +03:00 [INF] Request finished in 887.1526ms 200 text/html; charset=utf-8
+2019-08-20 19:52:39.315 +03:00 [INF] Request finished in 31.5458ms 200 text/css
+2019-08-20 19:52:39.323 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js  
+2019-08-20 19:52:39.332 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/site.js  
+2019-08-20 19:52:39.319 +03:00 [INF] Request finished in 34.425ms 200 application/javascript
+2019-08-20 19:52:39.345 +03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\js\site.js'
+2019-08-20 19:52:39.346 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/mine/my1.js  
+2019-08-20 19:52:39.353 +03:00 [INF] Request finished in 20.5694ms 200 application/javascript
+2019-08-20 19:52:39.355 +03:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\jquery\dist\jquery.js'
+2019-08-20 19:52:39.340 +03:00 [INF] Sending file. Request path: '/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js'
+2019-08-20 19:52:39.338 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+2019-08-20 19:52:39.357 +03:00 [INF] Sending file. Request path: '/js/mine/my1.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\js\mine\my1.js'
+2019-08-20 19:52:39.358 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY  
+2019-08-20 19:52:39.362 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js'
+2019-08-20 19:52:39.367 +03:00 [INF] Request finished in 84.0909ms 200 application/javascript
+2019-08-20 19:52:39.377 +03:00 [INF] Request finished in 30.2972ms 200 application/javascript
+2019-08-20 19:52:39.370 +03:00 [INF] Request finished in 46.9653ms 200 application/javascript
+2019-08-20 19:52:39.374 +03:00 [INF] Request finished in 130.4027ms 200 text/css
+2019-08-20 19:52:39.380 +03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\js\site.js'
+2019-08-20 19:52:39.384 +03:00 [INF] Request finished in 100.1595ms 200 application/javascript
+2019-08-20 19:52:39.387 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/mine/my3.js  
+2019-08-20 19:52:39.389 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/mine/my2.js  
+2019-08-20 19:52:39.391 +03:00 [INF] Request finished in 33.0057ms 200 application/javascript
+2019-08-20 19:52:39.399 +03:00 [INF] Sending file. Request path: '/js/mine/my3.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\js\mine\my3.js'
+2019-08-20 19:52:39.401 +03:00 [INF] Sending file. Request path: '/js/mine/my2.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\js\mine\my2.js'
+2019-08-20 19:52:39.406 +03:00 [INF] Request finished in 18.1302ms 200 application/javascript
+2019-08-20 19:52:39.408 +03:00 [INF] Request finished in 19.2212ms 200 application/javascript
+2019-08-20 19:53:20.847 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/guns  
+2019-08-20 19:53:20.867 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web)'
+2019-08-20 19:53:20.874 +03:00 [INF] Route matched with {action = "ListGuns", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BookShare.Web.Models.Album]] ListGuns() on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-20 19:53:20.880 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web) - Validation state: "Valid"
+2019-08-20 19:53:20.893 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 19:53:20.967 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-08-20 19:53:21.045 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 162.29770000000002ms.
+2019-08-20 19:53:21.056 +03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Album, Heavy.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-20 19:53:21.141 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web) in 261.4457ms
+2019-08-20 19:53:21.144 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web)'
+2019-08-20 19:53:21.146 +03:00 [INF] Request finished in 298.5507ms 200 application/json; charset=utf-8
+2019-08-20 19:55:30.922 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/guns  
+2019-08-20 19:55:30.926 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web)'
+2019-08-20 19:55:30.928 +03:00 [INF] Route matched with {action = "ListGuns", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BookShare.Web.Models.Album]] ListGuns() on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-20 19:55:30.933 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web) - Validation state: "Valid"
+2019-08-20 19:55:30.935 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 19:55:30.946 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-08-20 19:55:30.950 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 15.0616ms.
+2019-08-20 19:55:30.952 +03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Album, Heavy.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-20 19:55:30.956 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web) in 22.7701ms
+2019-08-20 19:55:30.957 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web)'
+2019-08-20 19:55:30.959 +03:00 [INF] Request finished in 41.1289ms 200 application/json; charset=utf-8
+2019-08-20 23:21:47.657 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:21:49.295 +03:00 [INF] Executed DbCommand (80ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-08-20 23:21:49.463 +03:00 [INF] User profile is available. Using 'C:\Users\yilij\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-20 23:21:51.648 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-20 23:21:51.770 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-20 23:21:51.814 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookShare.Web.Controllers.HomeController (Heavy.Web).
+2019-08-20 23:21:51.834 +03:00 [INF] Executing action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:21:51.836 +03:00 [INF] Visiting Home Index..
+2019-08-20 23:21:51.842 +03:00 [INF] Executed action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.3587000000000002ms.
+2019-08-20 23:21:51.872 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-20 23:21:52.462 +03:00 [INF] Executed ViewResult - view Index executed in 608.0016ms.
+2019-08-20 23:21:52.477 +03:00 [INF] Executed action BookShare.Web.Controllers.HomeController.Index (Heavy.Web) in 660.5338ms
+2019-08-20 23:21:52.487 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-20 23:21:52.504 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css  
+2019-08-20 23:21:52.504 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.js  
+2019-08-20 23:21:52.506 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.js  
+2019-08-20 23:21:52.506 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.css  
+2019-08-20 23:21:52.507 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery-validation/dist/jquery.validate.js  
+2019-08-20 23:21:52.533 +03:00 [INF] Request finished in 886.3184ms 200 text/html; charset=utf-8
+2019-08-20 23:21:52.540 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js  
+2019-08-20 23:21:52.541 +03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\css\site.css'
+2019-08-20 23:21:52.547 +03:00 [INF] Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\jquery-validation\dist\jquery.validate.js'
+2019-08-20 23:21:52.550 +03:00 [INF] Request finished in 46.317ms 200 text/css
+2019-08-20 23:21:52.555 +03:00 [INF] Request finished in 47.4899ms 200 application/javascript
+2019-08-20 23:21:52.547 +03:00 [INF] Sending file. Request path: '/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js'
+2019-08-20 23:21:52.559 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/site.js  
+2019-08-20 23:21:52.569 +03:00 [INF] Request finished in 29.5189ms 200 application/javascript
+2019-08-20 23:21:52.568 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/mine/my2.js  
+2019-08-20 23:21:52.575 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/mine/my1.js  
+2019-08-20 23:21:52.574 +03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\js\site.js'
+2019-08-20 23:21:52.583 +03:00 [INF] Sending file. Request path: '/js/mine/my1.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\js\mine\my1.js'
+2019-08-20 23:21:52.580 +03:00 [INF] Sending file. Request path: '/js/mine/my2.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\js\mine\my2.js'
+2019-08-20 23:21:52.595 +03:00 [INF] Request finished in 20.2637ms 200 application/javascript
+2019-08-20 23:21:52.591 +03:00 [INF] Request finished in 31.659ms 200 application/javascript
+2019-08-20 23:21:52.597 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js'
+2019-08-20 23:21:52.558 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+2019-08-20 23:21:52.600 +03:00 [INF] Request finished in 32.187ms 200 application/javascript
+2019-08-20 23:21:52.600 +03:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\jquery\dist\jquery.js'
+2019-08-20 23:21:52.604 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY  
+2019-08-20 23:21:52.607 +03:00 [INF] Request finished in 100.5825ms 200 application/javascript
+2019-08-20 23:21:52.616 +03:00 [INF] Request finished in 111.6817ms 200 application/javascript
+2019-08-20 23:21:52.612 +03:00 [INF] Request finished in 105.9027ms 200 text/css
+2019-08-20 23:21:52.619 +03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\js\site.js'
+2019-08-20 23:21:52.625 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/mine/my3.js  
+2019-08-20 23:21:52.628 +03:00 [INF] Request finished in 24.0878ms 200 application/javascript
+2019-08-20 23:21:52.631 +03:00 [INF] Sending file. Request path: '/js/mine/my3.js'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\js\mine\my3.js'
+2019-08-20 23:21:52.635 +03:00 [INF] Request finished in 9.452ms 200 application/javascript
+2019-08-20 23:22:05.039 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/guns  
+2019-08-20 23:22:05.056 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web)
+BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateSet candidates)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, EndpointSelectorContext context, CandidateSet candidateSet)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.SelectAsync(HttpContext httpContext, EndpointSelectorContext context, CandidateSet candidateSet)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext, EndpointSelectorContext context)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext, EndpointSelectorContext context)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-08-20 23:22:05.286 +03:00 [INF] Request finished in 246.9128ms 500 text/html; charset=utf-8
+2019-08-20 23:22:47.746 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/guns  
+2019-08-20 23:22:47.752 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web)
+BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateSet candidates)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, EndpointSelectorContext context, CandidateSet candidateSet)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.SelectAsync(HttpContext httpContext, EndpointSelectorContext context, CandidateSet candidateSet)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext, EndpointSelectorContext context)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext, EndpointSelectorContext context)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-08-20 23:22:47.781 +03:00 [INF] Request finished in 35.211ms 500 text/html; charset=utf-8
+2019-08-20 23:22:57.418 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/guns  
+2019-08-20 23:22:57.422 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web)
+BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateSet candidates)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, EndpointSelectorContext context, CandidateSet candidateSet)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.SelectAsync(HttpContext httpContext, EndpointSelectorContext context, CandidateSet candidateSet)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext, EndpointSelectorContext context)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext, EndpointSelectorContext context)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-08-20 23:22:57.448 +03:00 [INF] Request finished in 29.8436ms 500 text/html; charset=utf-8
+2019-08-20 23:23:38.098 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:23:38.527 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-08-20 23:23:38.623 +03:00 [INF] User profile is available. Using 'C:\Users\yilij\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-20 23:23:40.020 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-20 23:23:40.111 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-20 23:23:40.150 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookShare.Web.Controllers.HomeController (Heavy.Web).
+2019-08-20 23:23:40.168 +03:00 [INF] Executing action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:23:40.171 +03:00 [INF] Visiting Home Index..
+2019-08-20 23:23:40.175 +03:00 [INF] Executed action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.0693ms.
+2019-08-20 23:23:40.204 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-20 23:23:40.731 +03:00 [INF] Executed ViewResult - view Index executed in 542.5528ms.
+2019-08-20 23:23:40.747 +03:00 [INF] Executed action BookShare.Web.Controllers.HomeController.Index (Heavy.Web) in 593.0258ms
+2019-08-20 23:23:40.759 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-20 23:23:40.782 +03:00 [INF] Request finished in 764.6298ms 200 text/html; charset=utf-8
+2019-08-20 23:23:48.542 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/guns  
+2019-08-20 23:23:48.550 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web)'
+2019-08-20 23:23:48.563 +03:00 [INF] Route matched with {action = "ListGuns", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BookShare.Web.Models.Album]] ListGuns() on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-20 23:23:48.567 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:23:48.576 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:23:48.643 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-08-20 23:23:48.745 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 175.55190000000002ms.
+2019-08-20 23:23:48.757 +03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Album, Heavy.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-20 23:23:48.856 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web) in 289.5751ms
+2019-08-20 23:23:48.859 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web)'
+2019-08-20 23:23:48.862 +03:00 [INF] Request finished in 320.0779ms 200 application/json; charset=utf-8
+2019-08-20 23:23:59.706 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/view/1  
+2019-08-20 23:23:59.711 +03:00 [INF] Request finished in 5.3167ms 404 text/plain
+2019-08-20 23:24:05.914 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/view/3  
+2019-08-20 23:24:05.916 +03:00 [INF] Request finished in 1.741ms 404 text/plain
+2019-08-20 23:24:59.877 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/guns  
+2019-08-20 23:24:59.879 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web)'
+2019-08-20 23:24:59.882 +03:00 [INF] Route matched with {action = "ListGuns", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BookShare.Web.Models.Album]] ListGuns() on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-20 23:24:59.887 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:24:59.892 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:24:59.907 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-08-20 23:24:59.912 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 21.104200000000002ms.
+2019-08-20 23:24:59.915 +03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Album, Heavy.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-20 23:24:59.917 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web) in 30.6992ms
+2019-08-20 23:24:59.920 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web)'
+2019-08-20 23:24:59.923 +03:00 [INF] Request finished in 45.5131ms 200 application/json; charset=utf-8
+2019-08-20 23:25:29.046 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/view/1  
+2019-08-20 23:25:29.048 +03:00 [INF] Request finished in 2.0112ms 404 text/plain
+2019-08-20 23:25:32.864 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/view/1  
+2019-08-20 23:25:32.866 +03:00 [INF] Request finished in 1.951ms 404 text/plain
+2019-08-20 23:25:58.217 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/view/1  
+2019-08-20 23:25:58.219 +03:00 [INF] Request finished in 2.1582ms 404 text/plain
+2019-08-20 23:26:14.321 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/view/1  
+2019-08-20 23:26:14.356 +03:00 [INF] Request finished in 46.5232ms 404 text/plain
+2019-08-20 23:26:57.723 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/view/1  
+2019-08-20 23:26:57.726 +03:00 [INF] Request finished in 3.4588ms 404 text/plain
+2019-08-20 23:27:28.758 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:27:29.095 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-08-20 23:27:29.185 +03:00 [INF] User profile is available. Using 'C:\Users\yilij\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-20 23:27:30.597 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-20 23:27:30.692 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-20 23:27:30.729 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookShare.Web.Controllers.HomeController (Heavy.Web).
+2019-08-20 23:27:30.748 +03:00 [INF] Executing action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:27:30.751 +03:00 [INF] Visiting Home Index..
+2019-08-20 23:27:30.756 +03:00 [INF] Executed action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.2988ms.
+2019-08-20 23:27:30.787 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-20 23:27:31.278 +03:00 [INF] Executed ViewResult - view Index executed in 509.307ms.
+2019-08-20 23:27:31.303 +03:00 [INF] Executed action BookShare.Web.Controllers.HomeController.Index (Heavy.Web) in 571.0678ms
+2019-08-20 23:27:31.312 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-20 23:27:31.334 +03:00 [INF] Request finished in 738.5196ms 200 text/html; charset=utf-8
+2019-08-20 23:27:43.734 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/AllGuns  
+2019-08-20 23:27:43.745 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web)'
+2019-08-20 23:27:43.753 +03:00 [INF] Route matched with {action = "ListGuns", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BookShare.Web.Models.Album]] ListGuns() on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-20 23:27:43.758 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:27:59.123 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album  
+2019-08-20 23:27:59.125 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-08-20 23:27:59.127 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:27:59.135 +03:00 [INF] Route matched with {action = "Index", controller = "Album", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:27:59.141 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:27:59.146 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:27:59.200 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-08-20 23:27:59.200 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-08-20 23:27:59.270 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 126.79560000000001ms.
+2019-08-20 23:27:59.270 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 15509.8631ms.
+2019-08-20 23:27:59.279 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-20 23:27:59.281 +03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Album, Heavy.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-20 23:27:59.362 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web) in 15604.4796ms
+2019-08-20 23:27:59.365 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web)'
+2019-08-20 23:27:59.368 +03:00 [INF] Request finished in 15633.9801ms 200 application/json; charset=utf-8
+2019-08-20 23:27:59.549 +03:00 [INF] Executed ViewResult - view Index executed in 273.25960000000003ms.
+2019-08-20 23:27:59.555 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Index (Heavy.Web) in 414.4456ms
+2019-08-20 23:27:59.559 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-08-20 23:27:59.562 +03:00 [INF] Request finished in 439.2718ms 200 text/html; charset=utf-8
+2019-08-20 23:28:18.214 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/AllGuns  
+2019-08-20 23:28:18.220 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web)'
+2019-08-20 23:28:18.222 +03:00 [INF] Route matched with {action = "ListGuns", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BookShare.Web.Models.Album]] ListGuns() on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-20 23:28:18.228 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:28:18.231 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:28:18.242 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-08-20 23:28:18.247 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 15.5282ms.
+2019-08-20 23:28:18.249 +03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Album, Heavy.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-20 23:28:18.252 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web) in 23.4815ms
+2019-08-20 23:28:18.256 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web)'
+2019-08-20 23:28:18.258 +03:00 [INF] Request finished in 44.195ms 200 application/json; charset=utf-8
+2019-08-20 23:28:59.541 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/View  
+2019-08-20 23:28:59.552 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web)'
+2019-08-20 23:28:59.586 +03:00 [INF] Route matched with {action = "ViewGun", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] ViewGun(Int32) on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-20 23:28:59.602 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:29:09.140 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:29:09.200 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Artist], [e].[CoverUrl], [e].[Price], [e].[ReleaseDate], [e].[Title]
+FROM [Albums] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-20 23:29:12.953 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 13347.958700000001ms.
+2019-08-20 23:29:12.960 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2019-08-20 23:29:12.974 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web) in 13385.135ms
+2019-08-20 23:29:12.976 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web)'
+2019-08-20 23:29:12.978 +03:00 [INF] Request finished in 13436.8825ms 404 application/problem+json; charset=utf-8
+2019-08-20 23:29:28.353 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/View?id=3  
+2019-08-20 23:29:28.355 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web)'
+2019-08-20 23:29:28.358 +03:00 [INF] Route matched with {action = "ViewGun", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] ViewGun(Int32) on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-20 23:29:28.372 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:29:31.887 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:29:31.897 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Artist], [e].[CoverUrl], [e].[Price], [e].[ReleaseDate], [e].[Title]
+FROM [Albums] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-20 23:29:31.919 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3544.1355000000003ms.
+2019-08-20 23:29:31.923 +03:00 [INF] Executing ObjectResult, writing value of type 'BookShare.Web.Models.Album'.
+2019-08-20 23:29:31.926 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web) in 3560.3319ms
+2019-08-20 23:29:31.927 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web)'
+2019-08-20 23:29:31.929 +03:00 [INF] Request finished in 3575.9568ms 200 application/json; charset=utf-8
+2019-08-20 23:33:26.776 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:33:27.135 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-08-20 23:33:27.238 +03:00 [INF] User profile is available. Using 'C:\Users\yilij\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-20 23:33:30.071 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-20 23:33:30.179 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-20 23:33:30.226 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookShare.Web.Controllers.HomeController (Heavy.Web).
+2019-08-20 23:33:30.256 +03:00 [INF] Executing action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:33:30.258 +03:00 [INF] Visiting Home Index..
+2019-08-20 23:33:30.264 +03:00 [INF] Executed action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.2468ms.
+2019-08-20 23:33:30.303 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-20 23:33:30.995 +03:00 [INF] Executed ViewResult - view Index executed in 712.2784ms.
+2019-08-20 23:33:31.009 +03:00 [INF] Executed action BookShare.Web.Controllers.HomeController.Index (Heavy.Web) in 779.6032ms
+2019-08-20 23:33:31.012 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-20 23:33:31.036 +03:00 [INF] Request finished in 965.7348ms 200 text/html; charset=utf-8
+2019-08-20 23:33:31.894 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico  
+2019-08-20 23:33:31.929 +03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\favicon.ico'
+2019-08-20 23:33:31.933 +03:00 [INF] Request finished in 38.9247ms 200 image/x-icon
+2019-08-20 23:33:33.759 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album  
+2019-08-20 23:33:33.769 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-08-20 23:33:33.780 +03:00 [INF] Route matched with {action = "Index", controller = "Album", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:33:33.786 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:33:33.792 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:33:33.850 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-08-20 23:33:33.921 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 133.8829ms.
+2019-08-20 23:33:33.936 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-20 23:33:34.157 +03:00 [INF] Executed ViewResult - view Index executed in 227.00830000000002ms.
+2019-08-20 23:33:34.159 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Index (Heavy.Web) in 374.6605ms
+2019-08-20 23:33:34.162 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-08-20 23:33:34.165 +03:00 [INF] Request finished in 405.9478ms 200 text/html; charset=utf-8
+2019-08-20 23:33:35.708 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album/Edit/1  
+2019-08-20 23:33:35.714 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Edit (Heavy.Web)'
+2019-08-20 23:33:35.740 +03:00 [INF] Route matched with {action = "Edit", controller = "Album", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Edit(Int32) on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:33:35.760 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Edit (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:33:35.766 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:33:35.815 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Artist], [e].[CoverUrl], [e].[Price], [e].[ReleaseDate], [e].[Title]
+FROM [Albums] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-20 23:33:35.836 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Edit (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 72.8939ms.
+2019-08-20 23:33:35.856 +03:00 [INF] Executing ViewResult, running view Edit.
+2019-08-20 23:33:36.785 +03:00 [INF] Executed ViewResult - view Edit executed in 946.3282ms.
+2019-08-20 23:33:36.791 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Edit (Heavy.Web) in 1047.1694ms
+2019-08-20 23:33:36.798 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Edit (Heavy.Web)'
+2019-08-20 23:33:36.804 +03:00 [INF] Request finished in 1095.6958ms 200 text/html; charset=utf-8
+2019-08-20 23:33:38.223 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album  
+2019-08-20 23:33:38.225 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-08-20 23:33:38.228 +03:00 [INF] Route matched with {action = "Index", controller = "Album", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:33:38.235 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:33:38.239 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:33:38.246 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-08-20 23:33:38.253 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 14.642000000000001ms.
+2019-08-20 23:33:38.257 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-20 23:33:38.387 +03:00 [INF] Executed ViewResult - view Index executed in 129.9613ms.
+2019-08-20 23:33:38.389 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Index (Heavy.Web) in 154.8126ms
+2019-08-20 23:33:38.391 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-08-20 23:33:38.393 +03:00 [INF] Request finished in 170.3571ms 200 text/html; charset=utf-8
+2019-08-20 23:33:41.064 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album/Create  
+2019-08-20 23:33:41.078 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Create (Heavy.Web)'
+2019-08-20 23:33:41.082 +03:00 [INF] Route matched with {action = "Create", controller = "Album", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Create() on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:33:41.087 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Create (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:33:41.089 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Create (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.37670000000000003ms.
+2019-08-20 23:33:41.113 +03:00 [INF] Executing ViewResult, running view Create.
+2019-08-20 23:33:41.281 +03:00 [INF] Executed ViewResult - view Create executed in 189.6586ms.
+2019-08-20 23:33:41.284 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Create (Heavy.Web) in 197.12650000000002ms
+2019-08-20 23:33:41.287 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Create (Heavy.Web)'
+2019-08-20 23:33:41.289 +03:00 [INF] Request finished in 224.6786ms 200 text/html; charset=utf-8
+2019-08-20 23:34:04.814 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/Album/Create application/x-www-form-urlencoded 334
+2019-08-20 23:34:04.816 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Create (Heavy.Web)'
+2019-08-20 23:34:04.824 +03:00 [INF] Route matched with {action = "Create", controller = "Album", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Create(BookShare.Web.ViewModels.BookCreateViewModel) on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:34:04.871 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Create (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:34:04.877 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:34:04.962 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 200), @p2='?' (DbType = Decimal), @p3='?' (DbType = Date), @p4='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Albums] ([Artist], [CoverUrl], [Price], [ReleaseDate], [Title])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [Id]
+FROM [Albums]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2019-08-20 23:34:04.993 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Create (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 119.15190000000001ms.
+2019-08-20 23:34:04.998 +03:00 [INF] Executing RedirectResult, redirecting to /Album/Details/6.
+2019-08-20 23:34:04.999 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Create (Heavy.Web) in 170.8072ms
+2019-08-20 23:34:05.000 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Create (Heavy.Web)'
+2019-08-20 23:34:05.003 +03:00 [INF] Request finished in 189.6082ms 302 
+2019-08-20 23:34:05.011 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album/Details/6  
+2019-08-20 23:34:05.013 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Details (Heavy.Web)'
+2019-08-20 23:34:05.020 +03:00 [INF] Route matched with {action = "Details", controller = "Album", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Details(Int32) on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:34:05.025 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Details (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:34:05.028 +03:00 [INF] Visiting Album 6
+2019-08-20 23:34:05.030 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:34:05.037 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Artist], [e].[CoverUrl], [e].[Price], [e].[ReleaseDate], [e].[Title]
+FROM [Albums] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-20 23:34:05.043 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Details (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 16.0476ms.
+2019-08-20 23:34:05.048 +03:00 [INF] Executing ViewResult, running view Details.
+2019-08-20 23:34:05.201 +03:00 [INF] Executed ViewResult - view Details executed in 156.3646ms.
+2019-08-20 23:34:05.206 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Details (Heavy.Web) in 181.3056ms
+2019-08-20 23:34:05.215 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Details (Heavy.Web)'
+2019-08-20 23:34:05.221 +03:00 [INF] Request finished in 209.9225ms 200 text/html; charset=utf-8
+2019-08-20 23:34:07.400 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album  
+2019-08-20 23:34:07.402 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-08-20 23:34:07.405 +03:00 [INF] Route matched with {action = "Index", controller = "Album", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:34:07.412 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:34:07.415 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:34:07.424 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-08-20 23:34:07.430 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 15.2615ms.
+2019-08-20 23:34:07.436 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-20 23:34:07.568 +03:00 [INF] Executed ViewResult - view Index executed in 132.0841ms.
+2019-08-20 23:34:07.573 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Index (Heavy.Web) in 160.9788ms
+2019-08-20 23:34:07.580 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-08-20 23:34:07.586 +03:00 [INF] Request finished in 186.5371ms 200 text/html; charset=utf-8
+2019-08-20 23:34:19.584 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album/Delete/6  
+2019-08-20 23:34:19.588 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Delete (Heavy.Web)'
+2019-08-20 23:34:19.598 +03:00 [INF] Route matched with {action = "Delete", controller = "Album", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Delete(Int32) on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:34:19.603 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Delete (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:34:19.607 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:34:19.612 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Artist], [e].[CoverUrl], [e].[Price], [e].[ReleaseDate], [e].[Title]
+FROM [Albums] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-20 23:34:19.622 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Delete (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 15.5479ms.
+2019-08-20 23:34:19.629 +03:00 [INF] Executing ViewResult, running view Delete.
+2019-08-20 23:34:19.756 +03:00 [INF] Executed ViewResult - view Delete executed in 130.5107ms.
+2019-08-20 23:34:19.762 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Delete (Heavy.Web) in 159.0495ms
+2019-08-20 23:34:19.769 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Delete (Heavy.Web)'
+2019-08-20 23:34:19.775 +03:00 [INF] Request finished in 190.8406ms 200 text/html; charset=utf-8
+2019-08-20 23:34:21.238 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/Album/Delete/6 application/x-www-form-urlencoded 176
+2019-08-20 23:34:21.241 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Delete (Heavy.Web)'
+2019-08-20 23:34:21.256 +03:00 [INF] Route matched with {action = "Delete", controller = "Album", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Delete(Int32, Microsoft.AspNetCore.Http.IFormCollection) on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:34:21.268 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Delete (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:34:21.273 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:34:21.279 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Artist], [e].[CoverUrl], [e].[Price], [e].[ReleaseDate], [e].[Title]
+FROM [Albums] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-20 23:34:21.294 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Albums]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2019-08-20 23:34:21.305 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Delete (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 33.5734ms.
+2019-08-20 23:34:21.309 +03:00 [INF] Executing RedirectResult, redirecting to /Album.
+2019-08-20 23:34:21.310 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Delete (Heavy.Web) in 49.5499ms
+2019-08-20 23:34:21.313 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Delete (Heavy.Web)'
+2019-08-20 23:34:21.315 +03:00 [INF] Request finished in 77.7714ms 302 
+2019-08-20 23:34:21.321 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album  
+2019-08-20 23:34:21.323 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-08-20 23:34:21.325 +03:00 [INF] Route matched with {action = "Index", controller = "Album", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:34:21.332 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:34:21.334 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:34:21.339 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-08-20 23:34:21.343 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 9.4947ms.
+2019-08-20 23:34:21.346 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-20 23:34:21.463 +03:00 [INF] Executed ViewResult - view Index executed in 117.78800000000001ms.
+2019-08-20 23:34:21.469 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Index (Heavy.Web) in 137.2844ms
+2019-08-20 23:34:21.475 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-08-20 23:34:21.482 +03:00 [INF] Request finished in 160.3396ms 200 text/html; charset=utf-8
+2019-08-20 23:35:13.995 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album/Create  
+2019-08-20 23:35:13.998 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Create (Heavy.Web)'
+2019-08-20 23:35:14.000 +03:00 [INF] Route matched with {action = "Create", controller = "Album", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Create() on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:35:14.007 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Create (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:35:14.009 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Create (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0193ms.
+2019-08-20 23:35:14.015 +03:00 [INF] Executing ViewResult, running view Create.
+2019-08-20 23:35:14.147 +03:00 [INF] Executed ViewResult - view Create executed in 131.9736ms.
+2019-08-20 23:35:14.152 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Create (Heavy.Web) in 145.52200000000002ms
+2019-08-20 23:35:14.160 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Create (Heavy.Web)'
+2019-08-20 23:35:14.165 +03:00 [INF] Request finished in 169.4435ms 200 text/html; charset=utf-8
+2019-08-20 23:37:46.385 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/v1/Shotgun/Create?Title=AA-12&CoverUrl=https://www.fire-support.co.uk/controlpanel/shoppics/ASG-15913.jpg&Price=100&Artist=Remington%20&ReleaseDate=01-01-1899  0
+2019-08-20 23:37:46.388 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.AddGun (Heavy.Web)'
+2019-08-20 23:37:46.395 +03:00 [INF] Route matched with {action = "AddGun", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AddGun(BookShare.Web.Models.Album) on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-20 23:37:46.401 +03:00 [INF] Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery._8wZEzknH1o" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery._8wZEzknH1o" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2019-08-20 23:37:46.452 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.AutoValidateAntiforgeryTokenAuthorizationFilter'.
+2019-08-20 23:37:46.463 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2019-08-20 23:37:46.538 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.AddGun (Heavy.Web) in 139.1856ms
+2019-08-20 23:37:46.540 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.AddGun (Heavy.Web)'
+2019-08-20 23:37:46.541 +03:00 [INF] Request finished in 156.4365ms 400 application/problem+json; charset=utf-8
+2019-08-20 23:37:51.868 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-20 23:37:51.871 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-20 23:37:51.873 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookShare.Web.Controllers.HomeController (Heavy.Web).
+2019-08-20 23:37:51.880 +03:00 [INF] Executing action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:37:51.882 +03:00 [INF] Visiting Home Index..
+2019-08-20 23:37:51.883 +03:00 [INF] Executed action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.2215ms.
+2019-08-20 23:37:51.885 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-20 23:37:52.014 +03:00 [INF] Executed ViewResult - view Index executed in 128.11700000000002ms.
+2019-08-20 23:37:52.019 +03:00 [INF] Executed action BookShare.Web.Controllers.HomeController.Index (Heavy.Web) in 139.2716ms
+2019-08-20 23:37:52.026 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-20 23:37:52.031 +03:00 [INF] Request finished in 163.0373ms 200 text/html; charset=utf-8
+2019-08-20 23:37:54.390 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album  
+2019-08-20 23:37:54.393 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-08-20 23:37:54.396 +03:00 [INF] Route matched with {action = "Index", controller = "Album", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:37:54.401 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:37:54.403 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:37:54.407 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-08-20 23:37:54.413 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 9.7814ms.
+2019-08-20 23:37:54.415 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-20 23:37:54.534 +03:00 [INF] Executed ViewResult - view Index executed in 119.3836ms.
+2019-08-20 23:37:54.536 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Index (Heavy.Web) in 135.2194ms
+2019-08-20 23:37:54.538 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-08-20 23:37:54.540 +03:00 [INF] Request finished in 150.4565ms 200 text/html; charset=utf-8
+2019-08-20 23:38:00.858 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album  
+2019-08-20 23:38:00.860 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-08-20 23:38:00.864 +03:00 [INF] Route matched with {action = "Index", controller = "Album", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:38:00.870 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:38:00.872 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:38:00.876 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-08-20 23:38:00.883 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 11.462800000000001ms.
+2019-08-20 23:38:00.885 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-20 23:38:01.006 +03:00 [INF] Executed ViewResult - view Index executed in 121.4646ms.
+2019-08-20 23:38:01.012 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Index (Heavy.Web) in 142.77280000000002ms
+2019-08-20 23:38:01.019 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-08-20 23:38:01.025 +03:00 [INF] Request finished in 166.9057ms 200 text/html; charset=utf-8
+2019-08-20 23:38:01.135 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico  
+2019-08-20 23:38:01.139 +03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\favicon.ico'
+2019-08-20 23:38:01.143 +03:00 [INF] Request finished in 7.8436ms 200 image/x-icon
+2019-08-20 23:38:32.504 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/v1/Shotgun/Create?Title=AA-12&CoverUrl=https://www.fire-support.co.uk/controlpanel/shoppics/ASG-15913.jpg&Price=100&Artist=Remington%20&ReleaseDate=01-01-1899  0
+2019-08-20 23:38:32.508 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.AddGun (Heavy.Web)'
+2019-08-20 23:38:32.510 +03:00 [INF] Route matched with {action = "AddGun", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AddGun(BookShare.Web.Models.Album) on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-20 23:38:32.518 +03:00 [INF] Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery._8wZEzknH1o" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery._8wZEzknH1o" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2019-08-20 23:38:32.523 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.AutoValidateAntiforgeryTokenAuthorizationFilter'.
+2019-08-20 23:38:32.529 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2019-08-20 23:38:32.531 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.AddGun (Heavy.Web) in 14.1853ms
+2019-08-20 23:38:32.533 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.AddGun (Heavy.Web)'
+2019-08-20 23:38:32.537 +03:00 [INF] Request finished in 32.7707ms 400 application/problem+json; charset=utf-8
+2019-08-20 23:39:40.969 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album/Details/1  
+2019-08-20 23:39:40.986 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Details (Heavy.Web)'
+2019-08-20 23:39:40.988 +03:00 [INF] Route matched with {action = "Details", controller = "Album", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Details(Int32) on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:39:40.992 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Details (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:39:40.995 +03:00 [INF] Visiting Album 1
+2019-08-20 23:39:40.996 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:39:41.004 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Artist], [e].[CoverUrl], [e].[Price], [e].[ReleaseDate], [e].[Title]
+FROM [Albums] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-20 23:39:41.011 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Details (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 16.7679ms.
+2019-08-20 23:39:41.015 +03:00 [INF] Executing ViewResult, running view Details.
+2019-08-20 23:39:41.153 +03:00 [INF] Executed ViewResult - view Details executed in 138.3389ms.
+2019-08-20 23:39:41.159 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Details (Heavy.Web) in 167.1266ms
+2019-08-20 23:39:41.167 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Details (Heavy.Web)'
+2019-08-20 23:39:41.172 +03:00 [INF] Request finished in 204.0275ms 200 text/html; charset=utf-8
+2019-08-20 23:42:37.410 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/Edit?id=1&Title=Mossberg%20499&CoverUrl=https://images-na.ssl-images-amazon.com/images/I/61y5eFkt%2BDL._SX679_.jpg&Price=100&ReleaseDate=10/13/1959&Artist=PLA  
+2019-08-20 23:42:37.413 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2019-08-20 23:42:37.417 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2019-08-20 23:42:37.419 +03:00 [INF] Request finished in 8.9509ms 405 text/plain
+2019-08-20 23:43:34.883 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album  
+2019-08-20 23:43:34.887 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-08-20 23:43:34.890 +03:00 [INF] Route matched with {action = "Index", controller = "Album", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:43:34.898 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:43:34.901 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:43:34.929 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-08-20 23:43:34.935 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 35.013200000000005ms.
+2019-08-20 23:43:34.938 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-20 23:43:35.063 +03:00 [INF] Executed ViewResult - view Index executed in 125.7154ms.
+2019-08-20 23:43:35.069 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Index (Heavy.Web) in 171.3837ms
+2019-08-20 23:43:35.078 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-08-20 23:43:35.084 +03:00 [INF] Request finished in 201.6997ms 200 text/html; charset=utf-8
+2019-08-20 23:43:50.780 +03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:5001/api/v1/Shotgun/Create?Title=AA-12&CoverUrl=https://www.fire-support.co.uk/controlpanel/shoppics/ASG-15913.jpg&Price=100&Artist=Remington%20&ReleaseDate=01-01-1899  0
+2019-08-20 23:43:50.783 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2019-08-20 23:43:50.785 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2019-08-20 23:43:50.787 +03:00 [INF] Request finished in 6.5589ms 405 text/plain
+2019-08-20 23:44:00.234 +03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:5001/api/v1/Shotgun/Create?Title=AA-12&CoverUrl=https://www.fire-support.co.uk/controlpanel/shoppics/ASG-15913.jpg&Price=100&Artist=Remington%20&ReleaseDate=01-01-1899  0
+2019-08-20 23:44:00.236 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2019-08-20 23:44:00.238 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2019-08-20 23:44:00.241 +03:00 [INF] Request finished in 7.3149ms 405 text/plain
+2019-08-20 23:44:25.157 +03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:5001/api/v1/Shotgun/Create?Title=AA-250&CoverUrl=https://www.fire-support.co.uk/controlpanel/shoppics/ASG-15913.jpg&Price=100&Artist=Remington%20&ReleaseDate=01-01-1899  0
+2019-08-20 23:44:25.160 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2019-08-20 23:44:25.162 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2019-08-20 23:44:25.164 +03:00 [INF] Request finished in 6.9875ms 405 text/plain
+2019-08-20 23:44:34.387 +03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:5001/api/v1/Shotgun/Create?Title=AA-250&CoverUrl=&Price=100&Artist=Remington%20&ReleaseDate=01-01-1899  0
+2019-08-20 23:44:34.392 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2019-08-20 23:44:34.394 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2019-08-20 23:44:34.397 +03:00 [INF] Request finished in 9.3812ms 405 text/plain
+2019-08-20 23:44:52.944 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/AllGuns  
+2019-08-20 23:44:52.946 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web)'
+2019-08-20 23:44:52.965 +03:00 [INF] Route matched with {action = "ListGuns", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[BookShare.Web.Models.Album]] ListGuns() on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-20 23:44:52.970 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:44:52.976 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:44:52.990 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-08-20 23:44:52.999 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 26.0275ms.
+2019-08-20 23:44:53.001 +03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Album, Heavy.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-20 23:44:53.015 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web) in 45.840900000000005ms
+2019-08-20 23:44:53.017 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ListGuns (Heavy.Web)'
+2019-08-20 23:44:53.019 +03:00 [INF] Request finished in 74.5637ms 200 application/json; charset=utf-8
+2019-08-20 23:45:22.178 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/view?id=2  
+2019-08-20 23:45:22.180 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web)'
+2019-08-20 23:45:22.185 +03:00 [INF] Route matched with {action = "ViewGun", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] ViewGun(Int32) on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-20 23:45:22.192 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:45:22.196 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:45:22.203 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Artist], [e].[CoverUrl], [e].[Price], [e].[ReleaseDate], [e].[Title]
+FROM [Albums] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-20 23:45:22.210 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 15.099ms.
+2019-08-20 23:45:22.212 +03:00 [INF] Executing ObjectResult, writing value of type 'BookShare.Web.Models.Album'.
+2019-08-20 23:45:22.213 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web) in 22.439700000000002ms
+2019-08-20 23:45:22.215 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web)'
+2019-08-20 23:45:22.219 +03:00 [INF] Request finished in 41.3302ms 200 application/json; charset=utf-8
+2019-08-20 23:45:31.511 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/Edit?id=1&Title=Mossberg%20499&CoverUrl=https://images-na.ssl-images-amazon.com/images/I/61y5eFkt%2BDL._SX679_.jpg&Price=100&ReleaseDate=10/13/1959&Artist=PLA  
+2019-08-20 23:45:31.513 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2019-08-20 23:45:31.515 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2019-08-20 23:45:31.517 +03:00 [INF] Request finished in 6.4257ms 405 text/plain
+2019-08-20 23:46:18.099 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/v1/Shotgun/Create?Title=AA-250&CoverUrl=&Price=100&Artist=Remington%20&ReleaseDate=01-01-1899  0
+2019-08-20 23:46:18.102 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.AddGun (Heavy.Web)'
+2019-08-20 23:46:18.104 +03:00 [INF] Route matched with {action = "AddGun", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AddGun(BookShare.Web.Models.Album) on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-20 23:46:18.109 +03:00 [INF] Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery._8wZEzknH1o" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery._8wZEzknH1o" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2019-08-20 23:46:18.114 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.AutoValidateAntiforgeryTokenAuthorizationFilter'.
+2019-08-20 23:46:18.116 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2019-08-20 23:46:18.118 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.AddGun (Heavy.Web) in 9.1743ms
+2019-08-20 23:46:18.122 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.AddGun (Heavy.Web)'
+2019-08-20 23:46:18.125 +03:00 [INF] Request finished in 25.8232ms 400 application/problem+json; charset=utf-8
+2019-08-20 23:46:27.612 +03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:5001/api/v1/Shotgun/Edit?id=1&Title=Mossberg%20499&CoverUrl=https://images-na.ssl-images-amazon.com/images/I/61y5eFkt%2BDL._SX679_.jpg&Price=100&ReleaseDate=10/13/1959&Artist=PLA  0
+2019-08-20 23:46:27.615 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.EditGun (Heavy.Web)'
+2019-08-20 23:46:27.622 +03:00 [INF] Route matched with {action = "EditGun", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] EditGun(Int32, BookShare.Web.Models.Album) on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-20 23:46:27.626 +03:00 [INF] Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery._8wZEzknH1o" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery._8wZEzknH1o" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2019-08-20 23:46:27.631 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.AutoValidateAntiforgeryTokenAuthorizationFilter'.
+2019-08-20 23:46:27.634 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2019-08-20 23:46:27.636 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.EditGun (Heavy.Web) in 10.5901ms
+2019-08-20 23:46:27.639 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.EditGun (Heavy.Web)'
+2019-08-20 23:46:27.641 +03:00 [INF] Request finished in 28.792ms 400 application/problem+json; charset=utf-8
+2019-08-20 23:47:14.023 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/v1/Shotgun/Create?Title=AA-250&CoverUrl=%22%22&Price=100&Artist=Remington%20&ReleaseDate=01-01-1899  0
+2019-08-20 23:47:14.025 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.AddGun (Heavy.Web)'
+2019-08-20 23:47:14.027 +03:00 [INF] Route matched with {action = "AddGun", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AddGun(BookShare.Web.Models.Album) on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-20 23:47:14.031 +03:00 [INF] Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery._8wZEzknH1o" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery._8wZEzknH1o" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2019-08-20 23:47:14.038 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.AutoValidateAntiforgeryTokenAuthorizationFilter'.
+2019-08-20 23:47:14.040 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2019-08-20 23:47:14.042 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.AddGun (Heavy.Web) in 10.9978ms
+2019-08-20 23:47:14.045 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.AddGun (Heavy.Web)'
+2019-08-20 23:47:14.048 +03:00 [INF] Request finished in 25.331ms 400 application/problem+json; charset=utf-8
+2019-08-20 23:47:48.083 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album/Create  
+2019-08-20 23:47:48.098 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Create (Heavy.Web)'
+2019-08-20 23:47:48.101 +03:00 [INF] Route matched with {action = "Create", controller = "Album", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Create() on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:47:48.106 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Create (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:47:48.108 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Create (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.019700000000000002ms.
+2019-08-20 23:47:48.111 +03:00 [INF] Executing ViewResult, running view Create.
+2019-08-20 23:47:48.240 +03:00 [INF] Executed ViewResult - view Create executed in 129.5633ms.
+2019-08-20 23:47:48.246 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Create (Heavy.Web) in 139.9473ms
+2019-08-20 23:47:48.253 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Create (Heavy.Web)'
+2019-08-20 23:47:48.259 +03:00 [INF] Request finished in 177.1376ms 200 text/html; charset=utf-8
+2019-08-20 23:47:56.403 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.js.map  
+2019-08-20 23:47:56.413 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.js.map'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map'
+2019-08-20 23:47:56.417 +03:00 [INF] Request finished in 13.4012ms 200 text/plain
+2019-08-20 23:47:56.438 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.css.map  
+2019-08-20 23:47:56.446 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css.map'. Physical path: 'C:\Users\yilij\Downloads\ASP.NET-Core-MVC-Tutorial-Code-master\25 start\Heavy.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map'
+2019-08-20 23:47:56.449 +03:00 [INF] Request finished in 11.1879ms 200 text/plain
+2019-08-20 23:48:24.392 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/Album/Create application/x-www-form-urlencoded 334
+2019-08-20 23:48:24.396 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Create (Heavy.Web)'
+2019-08-20 23:48:24.398 +03:00 [INF] Route matched with {action = "Create", controller = "Album", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Create(BookShare.Web.ViewModels.BookCreateViewModel) on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:48:24.405 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Create (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:48:24.408 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:48:24.415 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 200), @p2='?' (DbType = Decimal), @p3='?' (DbType = Date), @p4='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Albums] ([Artist], [CoverUrl], [Price], [ReleaseDate], [Title])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [Id]
+FROM [Albums]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2019-08-20 23:48:24.424 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Create (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 15.9852ms.
+2019-08-20 23:48:24.426 +03:00 [INF] Executing RedirectResult, redirecting to /Album/Details/7.
+2019-08-20 23:48:24.428 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Create (Heavy.Web) in 24.244600000000002ms
+2019-08-20 23:48:24.430 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Create (Heavy.Web)'
+2019-08-20 23:48:24.435 +03:00 [INF] Request finished in 43.5012ms 302 
+2019-08-20 23:48:24.444 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album/Details/7  
+2019-08-20 23:48:24.448 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Details (Heavy.Web)'
+2019-08-20 23:48:24.449 +03:00 [INF] Route matched with {action = "Details", controller = "Album", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Details(Int32) on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:48:24.456 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Details (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:48:24.458 +03:00 [INF] Visiting Album 7
+2019-08-20 23:48:24.459 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:48:24.465 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Artist], [e].[CoverUrl], [e].[Price], [e].[ReleaseDate], [e].[Title]
+FROM [Albums] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-20 23:48:24.471 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Details (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 13.1874ms.
+2019-08-20 23:48:24.475 +03:00 [INF] Executing ViewResult, running view Details.
+2019-08-20 23:48:24.598 +03:00 [INF] Executed ViewResult - view Details executed in 123.45280000000001ms.
+2019-08-20 23:48:24.601 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Details (Heavy.Web) in 145.9675ms
+2019-08-20 23:48:24.603 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Details (Heavy.Web)'
+2019-08-20 23:48:24.605 +03:00 [INF] Request finished in 161.2438ms 200 text/html; charset=utf-8
+2019-08-20 23:49:45.323 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album  
+2019-08-20 23:49:45.325 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-08-20 23:49:45.327 +03:00 [INF] Route matched with {action = "Index", controller = "Album", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:49:45.331 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:49:45.334 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:49:45.339 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-08-20 23:49:45.345 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 11.9336ms.
+2019-08-20 23:49:45.348 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-20 23:49:45.479 +03:00 [INF] Executed ViewResult - view Index executed in 123.9675ms.
+2019-08-20 23:49:45.484 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Index (Heavy.Web) in 153.4806ms
+2019-08-20 23:49:45.489 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-08-20 23:49:45.493 +03:00 [INF] Request finished in 182.7907ms 200 text/html; charset=utf-8
+2019-08-20 23:49:47.899 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album/Delete/7  
+2019-08-20 23:49:47.902 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Delete (Heavy.Web)'
+2019-08-20 23:49:47.905 +03:00 [INF] Route matched with {action = "Delete", controller = "Album", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Delete(Int32) on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:49:47.911 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Delete (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:49:47.914 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:49:47.928 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Artist], [e].[CoverUrl], [e].[Price], [e].[ReleaseDate], [e].[Title]
+FROM [Albums] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-20 23:49:47.935 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Delete (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 21.261100000000003ms.
+2019-08-20 23:49:47.939 +03:00 [INF] Executing ViewResult, running view Delete.
+2019-08-20 23:49:48.069 +03:00 [INF] Executed ViewResult - view Delete executed in 129.33360000000002ms.
+2019-08-20 23:49:48.072 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Delete (Heavy.Web) in 160.4342ms
+2019-08-20 23:49:48.074 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Delete (Heavy.Web)'
+2019-08-20 23:49:48.076 +03:00 [INF] Request finished in 177.3978ms 200 text/html; charset=utf-8
+2019-08-20 23:49:49.545 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/Album/Delete/7 application/x-www-form-urlencoded 176
+2019-08-20 23:49:49.548 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Delete (Heavy.Web)'
+2019-08-20 23:49:49.552 +03:00 [INF] Route matched with {action = "Delete", controller = "Album", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Delete(Int32, Microsoft.AspNetCore.Http.IFormCollection) on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:49:49.560 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Delete (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:49:49.563 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:49:49.576 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Artist], [e].[CoverUrl], [e].[Price], [e].[ReleaseDate], [e].[Title]
+FROM [Albums] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-20 23:49:49.592 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Albums]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2019-08-20 23:49:49.596 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Delete (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 33.3009ms.
+2019-08-20 23:49:49.599 +03:00 [INF] Executing RedirectResult, redirecting to /Album.
+2019-08-20 23:49:49.600 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Delete (Heavy.Web) in 41.4165ms
+2019-08-20 23:49:49.602 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Delete (Heavy.Web)'
+2019-08-20 23:49:49.605 +03:00 [INF] Request finished in 60.2779ms 302 
+2019-08-20 23:49:49.611 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album  
+2019-08-20 23:49:49.612 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-08-20 23:49:49.614 +03:00 [INF] Route matched with {action = "Index", controller = "Album", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:49:49.618 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:49:49.620 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:49:49.625 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-08-20 23:49:49.630 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 10.338000000000001ms.
+2019-08-20 23:49:49.632 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-20 23:49:49.755 +03:00 [INF] Executed ViewResult - view Index executed in 122.49730000000001ms.
+2019-08-20 23:49:49.760 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Index (Heavy.Web) in 142.3544ms
+2019-08-20 23:49:49.770 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-08-20 23:49:49.775 +03:00 [INF] Request finished in 163.6359ms 200 text/html; charset=utf-8
+2019-08-20 23:51:40.245 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:51:40.630 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-08-20 23:51:40.724 +03:00 [INF] User profile is available. Using 'C:\Users\yilij\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-20 23:51:43.431 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-20 23:51:43.539 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-20 23:51:43.582 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookShare.Web.Controllers.HomeController (Heavy.Web).
+2019-08-20 23:51:43.614 +03:00 [INF] Executing action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:51:43.617 +03:00 [INF] Visiting Home Index..
+2019-08-20 23:51:43.627 +03:00 [INF] Executed action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4.1415000000000006ms.
+2019-08-20 23:51:43.662 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-20 23:51:44.231 +03:00 [INF] Executed ViewResult - view Index executed in 587.7984ms.
+2019-08-20 23:51:44.260 +03:00 [INF] Executed action BookShare.Web.Controllers.HomeController.Index (Heavy.Web) in 674.4681ms
+2019-08-20 23:51:44.264 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-20 23:51:44.283 +03:00 [INF] Request finished in 852.9149ms 200 text/html; charset=utf-8
+2019-08-20 23:51:46.901 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album  
+2019-08-20 23:51:46.911 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-08-20 23:51:46.921 +03:00 [INF] Route matched with {action = "Index", controller = "Album", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:51:46.929 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:51:46.939 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:51:46.997 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-08-20 23:51:47.063 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 130.8372ms.
+2019-08-20 23:51:47.074 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-20 23:51:47.295 +03:00 [INF] Executed ViewResult - view Index executed in 224.5865ms.
+2019-08-20 23:51:47.299 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Index (Heavy.Web) in 370.17600000000004ms
+2019-08-20 23:51:47.302 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-08-20 23:51:47.308 +03:00 [INF] Request finished in 406.7985ms 200 text/html; charset=utf-8
+2019-08-20 23:51:58.641 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/v1/Shotgun/Create?Title=AA-250&CoverUrl=%22%22&Price=100&Artist=Remington%20&ReleaseDate=01-01-1899  0
+2019-08-20 23:51:58.646 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.AddGun (Heavy.Web)'
+2019-08-20 23:51:58.667 +03:00 [INF] Route matched with {action = "AddGun", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AddGun(BookShare.Web.Models.Album) on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-20 23:51:58.675 +03:00 [INF] Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery._8wZEzknH1o" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery._8wZEzknH1o" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2019-08-20 23:51:58.728 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.AutoValidateAntiforgeryTokenAuthorizationFilter'.
+2019-08-20 23:51:58.738 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2019-08-20 23:51:58.815 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.AddGun (Heavy.Web) in 143.9165ms
+2019-08-20 23:51:58.816 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.AddGun (Heavy.Web)'
+2019-08-20 23:51:58.818 +03:00 [INF] Request finished in 176.7912ms 400 application/problem+json; charset=utf-8
+2019-08-20 23:52:06.064 +03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:5001/api/v1/Shotgun/Edit?id=1&Title=Mossberg%20499&CoverUrl=https://images-na.ssl-images-amazon.com/images/I/61y5eFkt%2BDL._SX679_.jpg&Price=100&ReleaseDate=10/13/1959&Artist=PLA  0
+2019-08-20 23:52:06.070 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.EditGun (Heavy.Web)'
+2019-08-20 23:52:06.079 +03:00 [INF] Route matched with {action = "EditGun", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] EditGun(Int32, BookShare.Web.Models.Album) on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-20 23:52:06.085 +03:00 [INF] Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery._8wZEzknH1o" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery._8wZEzknH1o" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2019-08-20 23:52:06.091 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.AutoValidateAntiforgeryTokenAuthorizationFilter'.
+2019-08-20 23:52:06.093 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2019-08-20 23:52:06.096 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.EditGun (Heavy.Web) in 12.4289ms
+2019-08-20 23:52:06.098 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.EditGun (Heavy.Web)'
+2019-08-20 23:52:06.100 +03:00 [INF] Request finished in 35.6286ms 400 application/problem+json; charset=utf-8
+2019-08-20 23:52:25.444 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/view?id=2  
+2019-08-20 23:52:25.446 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web)'
+2019-08-20 23:52:25.453 +03:00 [INF] Route matched with {action = "ViewGun", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] ViewGun(Int32) on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-20 23:52:25.477 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:52:25.482 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:52:25.539 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Artist], [e].[CoverUrl], [e].[Price], [e].[ReleaseDate], [e].[Title]
+FROM [Albums] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-20 23:52:25.561 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 81.5965ms.
+2019-08-20 23:52:25.564 +03:00 [INF] Executing ObjectResult, writing value of type 'BookShare.Web.Models.Album'.
+2019-08-20 23:52:25.571 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web) in 113.98660000000001ms
+2019-08-20 23:52:25.573 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web)'
+2019-08-20 23:52:25.575 +03:00 [INF] Request finished in 130.4728ms 200 application/json; charset=utf-8
+2019-08-20 23:52:39.290 +03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:5001/api/v1/Shotgun/Edit?id=1&Title=Mossberg%20499&CoverUrl=https://images-na.ssl-images-amazon.com/images/I/61y5eFkt%2BDL._SX679_.jpg&Price=100&ReleaseDate=10/13/1959&Artist=PLA  0
+2019-08-20 23:52:39.293 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.EditGun (Heavy.Web)'
+2019-08-20 23:52:39.295 +03:00 [INF] Route matched with {action = "EditGun", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] EditGun(Int32, BookShare.Web.Models.Album) on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-20 23:52:39.298 +03:00 [INF] Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery._8wZEzknH1o" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery._8wZEzknH1o" is not present.
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2019-08-20 23:52:39.306 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.AutoValidateAntiforgeryTokenAuthorizationFilter'.
+2019-08-20 23:52:39.308 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2019-08-20 23:52:39.310 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.EditGun (Heavy.Web) in 11.910200000000001ms
+2019-08-20 23:52:39.314 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.EditGun (Heavy.Web)'
+2019-08-20 23:52:39.317 +03:00 [INF] Request finished in 26.5568ms 400 application/problem+json; charset=utf-8
+2019-08-20 23:54:53.479 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-20 23:54:53.481 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-20 23:54:53.484 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookShare.Web.Controllers.HomeController (Heavy.Web).
+2019-08-20 23:54:53.488 +03:00 [INF] Executing action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:54:53.492 +03:00 [INF] Visiting Home Index..
+2019-08-20 23:54:53.494 +03:00 [INF] Executed action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.6151ms.
+2019-08-20 23:54:53.497 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-20 23:54:53.633 +03:00 [INF] Executed ViewResult - view Index executed in 136.0312ms.
+2019-08-20 23:54:53.639 +03:00 [INF] Executed action BookShare.Web.Controllers.HomeController.Index (Heavy.Web) in 151.0298ms
+2019-08-20 23:54:53.647 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-20 23:54:53.652 +03:00 [INF] Request finished in 173.1053ms 200 text/html; charset=utf-8
+2019-08-20 23:54:55.137 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album  
+2019-08-20 23:54:55.140 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-08-20 23:54:55.142 +03:00 [INF] Route matched with {action = "Index", controller = "Album", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:54:55.149 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:54:55.152 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:54:55.158 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-08-20 23:54:55.165 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 13.1391ms.
+2019-08-20 23:54:55.170 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-20 23:54:55.296 +03:00 [INF] Executed ViewResult - view Index executed in 125.9972ms.
+2019-08-20 23:54:55.299 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Index (Heavy.Web) in 150.7056ms
+2019-08-20 23:54:55.301 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-08-20 23:54:55.303 +03:00 [INF] Request finished in 166.6042ms 200 text/html; charset=utf-8
+2019-08-20 23:55:16.657 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:55:17.032 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Albums] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-08-20 23:55:17.137 +03:00 [INF] User profile is available. Using 'C:\Users\yilij\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-20 23:55:19.889 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-20 23:55:19.992 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-20 23:55:20.023 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookShare.Web.Controllers.HomeController (Heavy.Web).
+2019-08-20 23:55:20.046 +03:00 [INF] Executing action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:55:20.050 +03:00 [INF] Visiting Home Index..
+2019-08-20 23:55:20.056 +03:00 [INF] Executed action method BookShare.Web.Controllers.HomeController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3.9246000000000003ms.
+2019-08-20 23:55:20.086 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-20 23:55:20.657 +03:00 [INF] Executed ViewResult - view Index executed in 588.6498ms.
+2019-08-20 23:55:20.667 +03:00 [INF] Executed action BookShare.Web.Controllers.HomeController.Index (Heavy.Web) in 641.527ms
+2019-08-20 23:55:20.670 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.HomeController.Index (Heavy.Web)'
+2019-08-20 23:55:20.688 +03:00 [INF] Request finished in 800.7092ms 200 text/html; charset=utf-8
+2019-08-20 23:55:27.441 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/Shotgun/view?id=2  
+2019-08-20 23:55:27.449 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web)'
+2019-08-20 23:55:27.476 +03:00 [INF] Route matched with {action = "ViewGun", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] ViewGun(Int32) on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-20 23:55:27.499 +03:00 [INF] Executing action method BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:55:27.506 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:55:27.604 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Artist], [e].[CoverUrl], [e].[Price], [e].[ReleaseDate], [e].[Title]
+FROM [Albums] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-08-20 23:55:27.683 +03:00 [INF] Executed action method BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 180.85850000000002ms.
+2019-08-20 23:55:27.693 +03:00 [INF] Executing ObjectResult, writing value of type 'BookShare.Web.Models.Album'.
+2019-08-20 23:55:27.771 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web) in 290.9135ms
+2019-08-20 23:55:27.773 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.ViewGun (Heavy.Web)'
+2019-08-20 23:55:27.775 +03:00 [INF] Request finished in 333.9709ms 200 application/json; charset=utf-8
+2019-08-20 23:55:33.986 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/v1/Shotgun/Create?Title=AA-250&CoverUrl=%22%22&Price=100&Artist=Remington%20&ReleaseDate=01-01-1899  0
+2019-08-20 23:55:33.994 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.AddGun (Heavy.Web)'
+2019-08-20 23:55:34.012 +03:00 [INF] Route matched with {action = "AddGun", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AddGun(BookShare.Web.Models.Album) on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-20 23:55:34.025 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2019-08-20 23:55:34.037 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.AddGun (Heavy.Web) in 20.1412ms
+2019-08-20 23:55:34.039 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.AddGun (Heavy.Web)'
+2019-08-20 23:55:34.041 +03:00 [INF] Request finished in 55.7968ms 415 application/problem+json; charset=utf-8
+2019-08-20 23:55:51.195 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album  
+2019-08-20 23:55:51.197 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-08-20 23:55:51.206 +03:00 [INF] Route matched with {action = "Index", controller = "Album", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:55:51.212 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Index (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:55:51.220 +03:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'HeavyContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-20 23:55:51.242 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Artist], [a].[CoverUrl], [a].[Price], [a].[ReleaseDate], [a].[Title]
+FROM [Albums] AS [a]
+2019-08-20 23:55:51.254 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Index (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 37.9514ms.
+2019-08-20 23:55:51.266 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-20 23:55:51.502 +03:00 [INF] Executed ViewResult - view Index executed in 240.9394ms.
+2019-08-20 23:55:51.508 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Index (Heavy.Web) in 295.9877ms
+2019-08-20 23:55:51.515 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Index (Heavy.Web)'
+2019-08-20 23:55:51.518 +03:00 [INF] Request finished in 323.961ms 200 text/html; charset=utf-8
+2019-08-20 23:55:53.581 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/Album/Create  
+2019-08-20 23:55:53.584 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.AlbumController.Create (Heavy.Web)'
+2019-08-20 23:55:53.589 +03:00 [INF] Route matched with {action = "Create", controller = "Album", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Create() on controller BookShare.Web.Controllers.AlbumController (Heavy.Web).
+2019-08-20 23:55:53.596 +03:00 [INF] Executing action method BookShare.Web.Controllers.AlbumController.Create (Heavy.Web) - Validation state: "Valid"
+2019-08-20 23:55:53.601 +03:00 [INF] Executed action method BookShare.Web.Controllers.AlbumController.Create (Heavy.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.8679ms.
+2019-08-20 23:55:53.610 +03:00 [INF] Executing ViewResult, running view Create.
+2019-08-20 23:55:53.834 +03:00 [INF] Executed ViewResult - view Create executed in 227.4233ms.
+2019-08-20 23:55:53.839 +03:00 [INF] Executed action BookShare.Web.Controllers.AlbumController.Create (Heavy.Web) in 243.2289ms
+2019-08-20 23:55:53.849 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.AlbumController.Create (Heavy.Web)'
+2019-08-20 23:55:53.858 +03:00 [INF] Request finished in 276.7791ms 200 text/html; charset=utf-8
+2019-08-20 23:56:04.654 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/v1/Shotgun/Create?Title=AA-250&CoverUrl=https://www.fire-support.co.uk/controlpanel/shoppics/ASG-15913.jpg&Price=100&Artist=Remington%20&ReleaseDate=01-01-1899  0
+2019-08-20 23:56:04.656 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.AddGun (Heavy.Web)'
+2019-08-20 23:56:04.657 +03:00 [INF] Route matched with {action = "AddGun", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AddGun(BookShare.Web.Models.Album) on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-20 23:56:04.662 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2019-08-20 23:56:04.663 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.AddGun (Heavy.Web) in 1.7225000000000001ms
+2019-08-20 23:56:04.666 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.AddGun (Heavy.Web)'
+2019-08-20 23:56:04.669 +03:00 [INF] Request finished in 15.2786ms 415 application/problem+json; charset=utf-8
+2019-08-20 23:56:49.522 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/v1/Shotgun/Create?Title=AA10&CoverUrl=https://www.fire-support.co.uk/controlpanel/shoppics/ASG-15913.jpg&Price=100&Artist=Remington%20&ReleaseDate=01-01-1899  0
+2019-08-20 23:56:49.525 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.AddGun (Heavy.Web)'
+2019-08-20 23:56:49.527 +03:00 [INF] Route matched with {action = "AddGun", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AddGun(BookShare.Web.Models.Album) on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-20 23:56:49.533 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2019-08-20 23:56:49.535 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.AddGun (Heavy.Web) in 2.059ms
+2019-08-20 23:56:49.537 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.AddGun (Heavy.Web)'
+2019-08-20 23:56:49.540 +03:00 [INF] Request finished in 17.4318ms 415 application/problem+json; charset=utf-8
+2019-08-20 23:57:28.901 +03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:5001/api/v1/Shotgun/Edit?id=1&Title=Mossberg%20499&CoverUrl=https://images-na.ssl-images-amazon.com/images/I/61y5eFkt%2BDL._SX679_.jpg&Price=100&ReleaseDate=10/13/1959&Artist=PLA  0
+2019-08-20 23:57:28.904 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.ShotgunController.EditGun (Heavy.Web)'
+2019-08-20 23:57:28.910 +03:00 [INF] Route matched with {action = "EditGun", controller = "Shotgun", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] EditGun(Int32, BookShare.Web.Models.Album) on controller BookShare.Web.Controllers.ShotgunController (Heavy.Web).
+2019-08-20 23:57:28.916 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2019-08-20 23:57:28.918 +03:00 [INF] Executed action BookShare.Web.Controllers.ShotgunController.EditGun (Heavy.Web) in 2.6707ms
+2019-08-20 23:57:28.922 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.ShotgunController.EditGun (Heavy.Web)'
+2019-08-20 23:57:28.924 +03:00 [INF] Request finished in 23.5132ms 415 application/problem+json; charset=utf-8

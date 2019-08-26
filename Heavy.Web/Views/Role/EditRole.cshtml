@@ -1,0 +1,49 @@
+﻿@model BookShare.Web.ViewModels.RoleEditViewModel
+
+@{
+    ViewBag.Title = "Edit role";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<form method="post">
+
+    <div class="form-group row">
+        <label asp-for="Id" class="col-sm-2"></label>
+        <div class="col-sm-10">
+            <input class="form-control" asp-for="Id" readonly>
+            <span class="invalid" asp-validation-for="Id"></span>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="RoleName" class="col-sm-2"></label>
+        <div class="col-sm-10">
+            <input class="form-control" asp-for="RoleName">
+            <span class="invalid" asp-validation-for="RoleName"></span>
+        </div>
+    </div>
+
+    <div class="invalid" asp-validation-summary="ModelOnly">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
+</form>
+
+<hr />
+
+<h3>Users for this role</h3>
+<ul>
+    @foreach (var user in Model.Users)
+    {
+        <li>@user</li>
+    }
+</ul>
+
+<a asp-action="AddUserToRole" asp-route-roleId="@Model.Id" class="btn btn-primary">
+    Add user to this role
+</a>
+<a asp-action="DeleteUserFromRole" asp-route-roleId="@Model.Id" class="btn btn-primary">
+    Remove user from this role
+</a>
