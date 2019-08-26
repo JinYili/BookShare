@@ -64,3 +64,4 @@ Delete book by given id
 TEST
 There is a unitTest project included in solution, it has four test cases. 
 
+ATTENTION: HEADER SHOULD HAS "Content-Type	application/json; charset=utf-8"
