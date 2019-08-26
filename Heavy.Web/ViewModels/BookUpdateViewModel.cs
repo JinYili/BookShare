@@ -12,7 +12,7 @@ namespace BookShare.Web.ViewModels
 
         [Display(Name = "Author")]
         [Required(ErrorMessage = "{0} is Required"), MaxLength(100, ErrorMessage = "{0} length can't more than {1}")]
-        public string Artist { get; set; }
+        public string Author { get; set; }
 
         [Display(Name = "Release date")]
         [DataType(DataType.DateTime)]

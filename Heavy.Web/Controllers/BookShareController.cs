@@ -67,7 +67,7 @@ namespace BookShare.Web.Controllers
             {
                 var newModel = await _bookService.AddAsync(new Book
                 {
-                    Author = _htmlEncoder.Encode(BookCreateViewModel.Artist),
+                    Author = _htmlEncoder.Encode(BookCreateViewModel.Author),
                     Title = BookCreateViewModel.Title,
                     CoverUrl = BookCreateViewModel.CoverUrl,
                     Price = BookCreateViewModel.Price,
@@ -93,7 +93,7 @@ namespace BookShare.Web.Controllers
 
             var editModel = new BookUpdateViewModel
             {
-                Artist = model.Author,
+                Author = model.Author,
                 Title = model.Title,
                 CoverUrl = model.CoverUrl,
                 Price = model.Price,
@@ -115,7 +115,7 @@ namespace BookShare.Web.Controllers
 
             try
             {
-                model.Author = bookUpdateViewModel.Artist;
+                model.Author = bookUpdateViewModel.Author;
                 model.Title = bookUpdateViewModel.Title;
                 model.CoverUrl = bookUpdateViewModel.CoverUrl;
                 model.ReleaseDate = bookUpdateViewModel.ReleaseDate;
