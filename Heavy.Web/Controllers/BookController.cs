@@ -78,34 +78,28 @@ namespace BookShare.Web.Controllers
         }
 
 
-        [HttpPost("AddComment/{id:int?}")]
-        public async Task<JsonResult> AddComment(int id, [FromBody] Comment comment)
+        [HttpPost("AddComment")]
+        public async Task<JsonResult> AddComment([FromBody] Comment comment)
         {
             Comment newModel = await _CommentService.AddAsync(new Comment
             {
                 Content = comment.Content,
                 CreateDate = DateTime.Now,
-                bookId = id
+                bookId = (int)comment.bookId  
             });
             return Json(newModel);
         }
 
-        [HttpPut("Edit/{id:int?}")]
-        public async Task<JsonResult> Edit(int id, [FromBody]Book book)
+        [HttpPut("Edit")]
+        public async Task<JsonResult> Edit([FromBody]Book book)
         {
-            var model = await _bookService.GetByIdAsync(id);
+            var model = await _bookService.GetByIdAsync(book.Id);
             if (model == null)
             {
                 return Json(NotFound());
             }
-            model.Id = id;
-            model.Author = book.Author;
-            model.Title = book.Title;
-            model.CoverUrl = book.CoverUrl;
-            model.ReleaseDate = book.ReleaseDate;
-            model.Price = book.Price;
 
-            await _bookService.UpdateAsync(model);
+            await _bookService.UpdateAsync(book);
 
             return Json(book);
         }

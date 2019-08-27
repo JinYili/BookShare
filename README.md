@@ -40,21 +40,22 @@ Create a new book, request body like
         "coverUrl": "https://img2-placeit-net.s3-accelerate.amazonaws.com/uploads/stage/stage_image/37837/large_thumb_stage.jpg",
     }
 	
-[POST] https://localhost:5001/api/v1/book/AddComment/:id	
+[POST] https://localhost:5001/api/v1/book/AddComment
 Add a comment to a book, request body like
 	{
-		content : "newnew"
+		bookId: 15,
+		content : "hahah"
 	}
 
 [PUT]https://localhost:5001/api/v1/book/Edit/:id
 Edit book by given id ,request body like
     {
-        "id": 16,
-        "title": "To Live",
-        "author": "Yu Hua",
-        "releaseDate": "1993-05-09T00:00:00",
-        "price": 88.00,
-        "coverUrl": "https://pic1.zhimg.com/v2-91c46535cb866bea7ecfb02cb3e262b0_b.jpg",
+        "id": 17,
+        "title": "The Three-Body Problem",
+        "author": "Ken Liu",
+        "releaseDate": "2013-04-06T00:00:00",
+        "price": 108.00,
+        "coverUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0f/Threebody.jpg/220px-Threebody.jpg",
         "comments": []
     }
 	
