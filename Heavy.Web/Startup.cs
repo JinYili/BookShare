@@ -55,6 +55,12 @@ namespace BookShare.Web
                 options.RequireHttpsPermanent = true; // does not affect api requests
                 options.RespectBrowserAcceptHeader = true; // false by default
             });
+
+            /*In memory Cache*/
+            services.AddMemoryCache();
+
+
+
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

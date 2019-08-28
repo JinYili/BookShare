@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
+using BookShare.Cache;
 using BookShare.Web.Models;
 using BookShare.Web.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 using Newtonsoft.Json;
 
 namespace BookShare.Web.Controllers
@@ -16,18 +18,41 @@ namespace BookShare.Web.Controllers
     public class BookController : Controller
     {
         private readonly IBookService _bookService;
-        private readonly ICommentService _CommentService;
-        public BookController(IBookService bookService, ICommentService commentService)
+        private readonly ICommentService _commentService;
+        private readonly IMemoryCache _memoryCache;
+        private readonly MemoryCacheEntryOptions _cacheEntryOption; 
+
+        public BookController(IBookService bookService, ICommentService commentService, IMemoryCache memoryCache)
         {
             _bookService = bookService;
-            _CommentService = commentService;
+            _commentService = commentService;
+            _memoryCache = memoryCache;
+
+            _cacheEntryOption.SetAbsoluteExpiration(TimeSpan.FromSeconds(600)).SetSlidingExpiration(TimeSpan.FromSeconds(30));
+            _cacheEntryOption.RegisterPostEvictionCallback(FillCacheCallBack, this);
         }
 
         [HttpGet("All")]
         public async Task<JsonResult> ListAll()
         {
-            List<Book> book = await _bookService.GetAllAsync();
-            return Json(book);   
+            // No Cache
+            List<Book> cachedBook = await _bookService.GetAllAsync();
+
+            // In memory Cache
+            /*
+            if (!_memoryCache.TryGetValue(CacheEntryConstants.BookOfToday, out List<Book> cachedBook))
+            {
+                cachedBook = await _bookService.GetAllAsync();
+                _memoryCache.Set(CacheEntryConstants.BookOfToday, cachedBook, _cacheEntryOption);
+            }
+            */
+            return Json(cachedBook);   
+        }
+
+        private async void FillCacheCallBack(object key, object value, EvictionReason reason, object state)
+        {
+            List<Book> cachedBook = await _bookService.GetAllAsync();
+            _memoryCache.Set(CacheEntryConstants.BookOfToday, cachedBook, _cacheEntryOption);
         }
 
         [HttpGet("AllInfo")]
@@ -40,7 +65,7 @@ namespace BookShare.Web.Controllers
         [HttpGet("AllComment")]
         public async Task<JsonResult> ListComments()
         {
-            List<Comment> comments = await _CommentService.GetAllAsync();
+            List<Comment> comments = await _commentService.GetAllAsync();
             return Json(comments);
         }
 
@@ -59,7 +84,7 @@ namespace BookShare.Web.Controllers
         [HttpGet("ViewComment/{id:int?}")]
         public async Task<JsonResult> ViewComment(int id)
         {
-            List<Comment> comments = await _CommentService.GetByBookIdAsync(id);
+            List<Comment> comments = await _commentService.GetByBookIdAsync(id);
             return Json(comments);
         }
 
@@ -81,7 +106,7 @@ namespace BookShare.Web.Controllers
         [HttpPost("AddComment")]
         public async Task<JsonResult> AddComment([FromBody] Comment comment)
         {
-            Comment newModel = await _CommentService.AddAsync(new Comment
+            Comment newModel = await _commentService.AddAsync(new Comment
             {
                 Content = comment.Content,
                 CreateDate = DateTime.Now,
