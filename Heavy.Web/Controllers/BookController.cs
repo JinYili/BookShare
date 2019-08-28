@@ -44,8 +44,8 @@ namespace BookShare.Web.Controllers
             return Json(comments);
         }
 
-        [HttpGet("View/{id:int?}")]
-        public async Task<JsonResult> View(int id)
+        [HttpGet("View")]
+        public async Task<JsonResult> View([FromQuery] int id)
         {
             var model = await _bookService.GetByIdAsync(id);
             if (model == null)

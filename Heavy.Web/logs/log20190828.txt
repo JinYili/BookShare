@@ -1,0 +1,949 @@
+2019-08-28 17:24:50.851 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:24:53.506 +03:00 [INF] Executed DbCommand (64ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Book] AS [b])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-08-28 17:24:53.627 +03:00 [INF] User profile is available. Using 'C:\Users\yilij\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-28 17:24:55.058 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-28 17:24:55.175 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.HomeController.Index (BookShare)'
+2019-08-28 17:24:55.199 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookShare.Web.Controllers.HomeController (BookShare).
+2019-08-28 17:24:55.220 +03:00 [INF] Executing action method BookShare.Web.Controllers.HomeController.Index (BookShare) - Validation state: "Valid"
+2019-08-28 17:24:55.223 +03:00 [INF] Visiting Home Index..
+2019-08-28 17:24:55.228 +03:00 [INF] Executed action method BookShare.Web.Controllers.HomeController.Index (BookShare), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.4905ms.
+2019-08-28 17:24:55.264 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-28 17:24:55.899 +03:00 [INF] Executed ViewResult - view Index executed in 655.7401ms.
+2019-08-28 17:24:55.930 +03:00 [INF] Executed action BookShare.Web.Controllers.HomeController.Index (BookShare) in 728.3449ms
+2019-08-28 17:24:55.960 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.css  
+2019-08-28 17:24:55.960 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery-validation/dist/jquery.validate.js  
+2019-08-28 17:24:55.960 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css  
+2019-08-28 17:24:55.960 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.js  
+2019-08-28 17:24:55.960 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.js  
+2019-08-28 17:24:55.960 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.HomeController.Index (BookShare)'
+2019-08-28 17:24:55.974 +03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\wwwroot\css\site.css'
+2019-08-28 17:24:55.979 +03:00 [INF] Request finished in 18.0791ms 200 text/css
+2019-08-28 17:24:55.981 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js  
+2019-08-28 17:24:55.982 +03:00 [INF] Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.js'. Physical path: 'C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\wwwroot\lib\jquery-validation\dist\jquery.validate.js'
+2019-08-28 17:24:55.988 +03:00 [INF] Request finished in 27.5936ms 200 application/javascript
+2019-08-28 17:24:55.988 +03:00 [INF] Sending file. Request path: '/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js'. Physical path: 'C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js'
+2019-08-28 17:24:56.000 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/mine/my1.js  
+2019-08-28 17:24:56.001 +03:00 [INF] Request finished in 19.2934ms 200 application/javascript
+2019-08-28 17:24:56.004 +03:00 [INF] Request finished in 948.1743ms 200 text/html; charset=utf-8
+2019-08-28 17:24:56.006 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/mine/my2.js  
+2019-08-28 17:24:56.008 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/site.js  
+2019-08-28 17:24:56.012 +03:00 [INF] Sending file. Request path: '/js/mine/my2.js'. Physical path: 'C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\wwwroot\js\mine\my2.js'
+2019-08-28 17:24:56.005 +03:00 [INF] Sending file. Request path: '/js/mine/my1.js'. Physical path: 'C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\wwwroot\js\mine\my1.js'
+2019-08-28 17:24:56.027 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.js'. Physical path: 'C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js'
+2019-08-28 17:24:56.027 +03:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\wwwroot\lib\jquery\dist\jquery.js'
+2019-08-28 17:24:56.012 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+2019-08-28 17:24:56.028 +03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\wwwroot\js\site.js'
+2019-08-28 17:24:56.031 +03:00 [INF] Request finished in 24.8032ms 200 application/javascript
+2019-08-28 17:24:56.033 +03:00 [INF] Request finished in 33.1458ms 200 application/javascript
+2019-08-28 17:24:56.038 +03:00 [INF] Request finished in 77.7074ms 200 application/javascript
+2019-08-28 17:24:56.041 +03:00 [INF] Request finished in 81.0566ms 200 application/javascript
+2019-08-28 17:24:56.047 +03:00 [INF] Request finished in 86.9437ms 200 text/css
+2019-08-28 17:24:56.049 +03:00 [INF] Request finished in 41.2129ms 200 application/javascript
+2019-08-28 17:24:56.052 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/mine/my3.js  
+2019-08-28 17:24:56.059 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY  
+2019-08-28 17:24:56.063 +03:00 [INF] Sending file. Request path: '/js/mine/my3.js'. Physical path: 'C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\wwwroot\js\mine\my3.js'
+2019-08-28 17:24:56.067 +03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\wwwroot\js\site.js'
+2019-08-28 17:24:56.069 +03:00 [INF] Request finished in 17.4086ms 200 application/javascript
+2019-08-28 17:24:56.072 +03:00 [INF] Request finished in 13.0005ms 200 application/javascript
+2019-08-28 17:28:09.867 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/Allinfo  
+2019-08-28 17:28:09.883 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.ListAllInfo (BookShare)'
+2019-08-28 17:28:09.891 +03:00 [INF] Route matched with {action = "ListAllInfo", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ListAllInfo() on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:28:09.896 +03:00 [INF] Executing action method BookShare.Web.Controllers.BookController.ListAllInfo (BookShare) - Validation state: "Valid"
+2019-08-28 17:28:09.909 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:28:10.253 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Title], [x].[Author], [x].[CoverUrl], [x].[ReleaseDate], [x].[Price]
+FROM [Book] AS [x]
+ORDER BY [x].[Id]
+2019-08-28 17:28:10.311 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x.Comments].[Id], [x.Comments].[Content], [x.Comments].[CreateDate], [x.Comments].[bookId], [t].[Id]
+FROM [Comments] AS [x.Comments]
+INNER JOIN (
+    SELECT [x0].[Id]
+    FROM [Book] AS [x0]
+) AS [t] ON [x.Comments].[bookId] = [t].[Id]
+ORDER BY [t].[Id], [x.Comments].[CreateDate] DESC
+2019-08-28 17:28:10.377 +03:00 [INF] Executed action method BookShare.Web.Controllers.BookController.ListAllInfo (BookShare), returned result Microsoft.AspNetCore.Mvc.JsonResult in 478.966ms.
+2019-08-28 17:28:10.389 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Book, BookShare, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-28 17:28:10.475 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.ListAllInfo (BookShare) in 580.2468ms
+2019-08-28 17:28:10.476 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.ListAllInfo (BookShare)'
+2019-08-28 17:28:10.478 +03:00 [INF] Request finished in 611.0235ms 200 application/json; charset=utf-8
+2019-08-28 17:28:34.161 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/v1/book/AllInfo application/json; charset=utf-8 277
+2019-08-28 17:28:34.173 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2019-08-28 17:28:34.176 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2019-08-28 17:28:34.178 +03:00 [INF] Request finished in 16.6401ms 405 text/plain
+2019-08-28 17:28:34.190 +03:00 [INF] Connection id "0HLPBODVFJAQL", Request id "0HLPBODVFJAQL:00000002": the application completed without reading the entire request body.
+2019-08-28 17:28:41.588 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/AllInfo  
+2019-08-28 17:28:41.590 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.ListAllInfo (BookShare)'
+2019-08-28 17:28:41.592 +03:00 [INF] Route matched with {action = "ListAllInfo", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ListAllInfo() on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:28:41.597 +03:00 [INF] Executing action method BookShare.Web.Controllers.BookController.ListAllInfo (BookShare) - Validation state: "Valid"
+2019-08-28 17:28:41.601 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:28:41.611 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Title], [x].[Author], [x].[CoverUrl], [x].[ReleaseDate], [x].[Price]
+FROM [Book] AS [x]
+ORDER BY [x].[Id]
+2019-08-28 17:28:41.617 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x.Comments].[Id], [x.Comments].[Content], [x.Comments].[CreateDate], [x.Comments].[bookId], [t].[Id]
+FROM [Comments] AS [x.Comments]
+INNER JOIN (
+    SELECT [x0].[Id]
+    FROM [Book] AS [x0]
+) AS [t] ON [x.Comments].[bookId] = [t].[Id]
+ORDER BY [t].[Id], [x.Comments].[CreateDate] DESC
+2019-08-28 17:28:41.622 +03:00 [INF] Executed action method BookShare.Web.Controllers.BookController.ListAllInfo (BookShare), returned result Microsoft.AspNetCore.Mvc.JsonResult in 21.4721ms.
+2019-08-28 17:28:41.625 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Book, BookShare, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-28 17:28:41.629 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.ListAllInfo (BookShare) in 32.767ms
+2019-08-28 17:28:41.631 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.ListAllInfo (BookShare)'
+2019-08-28 17:28:41.633 +03:00 [INF] Request finished in 45.0797ms 200 application/json; charset=utf-8
+2019-08-28 17:29:00.425 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/View/15  
+2019-08-28 17:29:00.427 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:29:00.447 +03:00 [INF] Route matched with {action = "View", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] View(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:29:00.469 +03:00 [INF] Executing action method BookShare.Web.Controllers.BookController.View (BookShare) - Validation state: "Valid"
+2019-08-28 17:29:00.477 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:29:00.549 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Title], [x].[Author], [x].[CoverUrl], [x].[ReleaseDate], [x].[Price]
+FROM [Book] AS [x]
+WHERE [x].[Id] = @__id_0
+ORDER BY [x].[Id]
+2019-08-28 17:29:00.568 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x.Comments].[Id], [x.Comments].[Content], [x.Comments].[CreateDate], [x.Comments].[bookId], [t].[Id]
+FROM [Comments] AS [x.Comments]
+INNER JOIN (
+    SELECT TOP(1) [x0].[Id]
+    FROM [Book] AS [x0]
+    WHERE [x0].[Id] = @__id_0
+    ORDER BY [x0].[Id]
+) AS [t] ON [x.Comments].[bookId] = [t].[Id]
+WHERE [x.Comments].[bookId] = @__id_0
+ORDER BY [t].[Id], [x.Comments].[CreateDate] DESC
+2019-08-28 17:29:00.581 +03:00 [INF] Executed action method BookShare.Web.Controllers.BookController.View (BookShare), returned result Microsoft.AspNetCore.Mvc.JsonResult in 109.31960000000001ms.
+2019-08-28 17:29:00.584 +03:00 [INF] Executing JsonResult, writing value of type 'BookShare.Web.Models.Book'.
+2019-08-28 17:29:00.586 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.View (BookShare) in 134.09210000000002ms
+2019-08-28 17:29:00.587 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:29:00.591 +03:00 [INF] Request finished in 166.3768ms 200 application/json; charset=utf-8
+2019-08-28 17:29:13.635 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/ViewComment/15  
+2019-08-28 17:29:13.637 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.ViewComment (BookShare)'
+2019-08-28 17:29:13.644 +03:00 [INF] Route matched with {action = "ViewComment", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ViewComment(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:29:13.649 +03:00 [INF] Executing action method BookShare.Web.Controllers.BookController.ViewComment (BookShare) - Validation state: "Valid"
+2019-08-28 17:29:13.656 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:29:13.698 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Content], [x].[CreateDate], [x].[bookId]
+FROM [Comments] AS [x]
+WHERE [x].[bookId] = @__id_0
+2019-08-28 17:29:13.760 +03:00 [INF] Executed action method BookShare.Web.Controllers.BookController.ViewComment (BookShare), returned result Microsoft.AspNetCore.Mvc.JsonResult in 109.0556ms.
+2019-08-28 17:29:13.763 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Comment, BookShare, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-28 17:29:13.764 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.ViewComment (BookShare) in 116.00250000000001ms
+2019-08-28 17:29:13.766 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.ViewComment (BookShare)'
+2019-08-28 17:29:13.768 +03:00 [INF] Request finished in 133.0252ms 200 application/json; charset=utf-8
+2019-08-28 17:29:36.480 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/AllComment  
+2019-08-28 17:29:36.482 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.ListComments (BookShare)'
+2019-08-28 17:29:36.491 +03:00 [INF] Route matched with {action = "ListComments", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ListComments() on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:29:36.497 +03:00 [INF] Executing action method BookShare.Web.Controllers.BookController.ListComments (BookShare) - Validation state: "Valid"
+2019-08-28 17:29:36.506 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:29:36.519 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Content], [c].[CreateDate], [c].[bookId]
+FROM [Comments] AS [c]
+2019-08-28 17:29:36.525 +03:00 [INF] Executed action method BookShare.Web.Controllers.BookController.ListComments (BookShare), returned result Microsoft.AspNetCore.Mvc.JsonResult in 23.665300000000002ms.
+2019-08-28 17:29:36.528 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Comment, BookShare, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-28 17:29:36.532 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.ListComments (BookShare) in 35.1848ms
+2019-08-28 17:29:36.538 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.ListComments (BookShare)'
+2019-08-28 17:29:36.540 +03:00 [INF] Request finished in 60.8797ms 200 application/json; charset=utf-8
+2019-08-28 17:30:51.996 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/v1/book/add application/json; charset=utf-8 276
+2019-08-28 17:30:51.998 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.Add (BookShare)'
+2019-08-28 17:30:52.006 +03:00 [INF] Route matched with {action = "Add", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] Add(BookShare.Web.Models.Book) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:30:52.038 +03:00 [INF] Executing action method BookShare.Web.Controllers.BookController.Add (BookShare) - Validation state: "Valid"
+2019-08-28 17:30:52.045 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:30:52.214 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 200), @p2='?' (DbType = Decimal), @p3='?' (DbType = DateTime), @p4='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Book] ([Author], [CoverUrl], [Price], [ReleaseDate], [Title])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [Id]
+FROM [Book]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2019-08-28 17:30:52.265 +03:00 [INF] Executed action method BookShare.Web.Controllers.BookController.Add (BookShare), returned result Microsoft.AspNetCore.Mvc.JsonResult in 224.2153ms.
+2019-08-28 17:30:52.268 +03:00 [INF] Executing JsonResult, writing value of type 'BookShare.Web.Models.Book'.
+2019-08-28 17:30:52.271 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.Add (BookShare) in 260.7336ms
+2019-08-28 17:30:52.272 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.Add (BookShare)'
+2019-08-28 17:30:52.274 +03:00 [INF] Request finished in 277.9396ms 200 application/json; charset=utf-8
+2019-08-28 17:32:27.569 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/v1/book/AddComment application/json; charset=utf-8 40
+2019-08-28 17:32:27.572 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.AddComment (BookShare)'
+2019-08-28 17:32:27.579 +03:00 [INF] Route matched with {action = "AddComment", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] AddComment(BookShare.Web.Models.Comment) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:32:27.585 +03:00 [INF] Executing action method BookShare.Web.Controllers.BookController.AddComment (BookShare) - Validation state: "Valid"
+2019-08-28 17:32:27.592 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:32:27.613 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Comments] ([Content], [CreateDate], [bookId])
+VALUES (@p0, @p1, @p2);
+SELECT [Id]
+FROM [Comments]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2019-08-28 17:32:27.623 +03:00 [INF] Executed action method BookShare.Web.Controllers.BookController.AddComment (BookShare), returned result Microsoft.AspNetCore.Mvc.JsonResult in 33.871700000000004ms.
+2019-08-28 17:32:27.626 +03:00 [INF] Executing JsonResult, writing value of type 'BookShare.Web.Models.Comment'.
+2019-08-28 17:32:27.628 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.AddComment (BookShare) in 44.670100000000005ms
+2019-08-28 17:32:27.630 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.AddComment (BookShare)'
+2019-08-28 17:32:27.631 +03:00 [INF] Request finished in 62.9949ms 200 application/json; charset=utf-8
+2019-08-28 17:33:19.268 +03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:5001/api/v1/book/Edit/ application/json; charset=utf-8 312
+2019-08-28 17:33:19.271 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.Edit (BookShare)'
+2019-08-28 17:33:19.277 +03:00 [INF] Route matched with {action = "Edit", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] Edit(BookShare.Web.Models.Book) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:33:19.284 +03:00 [INF] Executing action method BookShare.Web.Controllers.BookController.Edit (BookShare) - Validation state: "Valid"
+2019-08-28 17:33:19.289 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:33:19.295 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Title], [x].[Author], [x].[CoverUrl], [x].[ReleaseDate], [x].[Price]
+FROM [Book] AS [x]
+WHERE [x].[Id] = @__id_0
+ORDER BY [x].[Id]
+2019-08-28 17:33:19.304 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x.Comments].[Id], [x.Comments].[Content], [x.Comments].[CreateDate], [x.Comments].[bookId], [t].[Id]
+FROM [Comments] AS [x.Comments]
+INNER JOIN (
+    SELECT TOP(1) [x0].[Id]
+    FROM [Book] AS [x0]
+    WHERE [x0].[Id] = @__id_0
+    ORDER BY [x0].[Id]
+) AS [t] ON [x.Comments].[bookId] = [t].[Id]
+WHERE [x.Comments].[bookId] = @__id_0
+ORDER BY [t].[Id], [x.Comments].[CreateDate] DESC
+2019-08-28 17:33:19.323 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 100), @p1='?' (Size = 200), @p2='?' (DbType = Decimal), @p3='?' (DbType = DateTime), @p4='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Book] SET [Author] = @p0, [CoverUrl] = @p1, [Price] = @p2, [ReleaseDate] = @p3, [Title] = @p4
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+2019-08-28 17:33:19.331 +03:00 [INF] Executed action method BookShare.Web.Controllers.BookController.Edit (BookShare), returned result Microsoft.AspNetCore.Mvc.JsonResult in 44.2472ms.
+2019-08-28 17:33:19.333 +03:00 [INF] Executing JsonResult, writing value of type 'BookShare.Web.Models.Book'.
+2019-08-28 17:33:19.336 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.Edit (BookShare) in 53.2526ms
+2019-08-28 17:33:19.339 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.Edit (BookShare)'
+2019-08-28 17:33:19.341 +03:00 [INF] Request finished in 72.8529ms 200 application/json; charset=utf-8
+2019-08-28 17:34:00.825 +03:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:5001/api/v1/book/delete/16  0
+2019-08-28 17:34:00.828 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.Delete (BookShare)'
+2019-08-28 17:34:00.835 +03:00 [INF] Route matched with {action = "Delete", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] Delete(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:34:00.840 +03:00 [INF] Executing action method BookShare.Web.Controllers.BookController.Delete (BookShare) - Validation state: "Valid"
+2019-08-28 17:34:00.847 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:34:00.855 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Title], [x].[Author], [x].[CoverUrl], [x].[ReleaseDate], [x].[Price]
+FROM [Book] AS [x]
+WHERE [x].[Id] = @__id_0
+ORDER BY [x].[Id]
+2019-08-28 17:34:01.013 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.Delete (BookShare) in 172.62550000000002ms
+2019-08-28 17:34:01.015 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.Delete (BookShare)'
+2019-08-28 17:34:01.019 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BookShare.Web.Services.BookEfService.GetByIdAsync(Int32 id) in C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\Services\BookEfService.cs:line 51
+   at BookShare.Web.Controllers.BookController.Delete(Int32 id) in C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\Controllers\BookController.cs:line 110
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-08-28 17:34:01.183 +03:00 [INF] Request finished in 357.9367ms 500 text/html; charset=utf-8
+2019-08-28 17:34:27.267 +03:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:5001/api/v1/book/delete/16 application/json; charset=utf-8 0
+2019-08-28 17:34:27.269 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.Delete (BookShare)'
+2019-08-28 17:34:27.271 +03:00 [INF] Route matched with {action = "Delete", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] Delete(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:34:27.275 +03:00 [INF] Executing action method BookShare.Web.Controllers.BookController.Delete (BookShare) - Validation state: "Valid"
+2019-08-28 17:34:27.279 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:34:27.283 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Title], [x].[Author], [x].[CoverUrl], [x].[ReleaseDate], [x].[Price]
+FROM [Book] AS [x]
+WHERE [x].[Id] = @__id_0
+ORDER BY [x].[Id]
+2019-08-28 17:34:27.384 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.Delete (BookShare) in 109.28630000000001ms
+2019-08-28 17:34:27.387 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.Delete (BookShare)'
+2019-08-28 17:34:27.390 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BookShare.Web.Services.BookEfService.GetByIdAsync(Int32 id) in C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\Services\BookEfService.cs:line 51
+   at BookShare.Web.Controllers.BookController.Delete(Int32 id) in C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\Controllers\BookController.cs:line 110
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-08-28 17:34:27.427 +03:00 [INF] Request finished in 160.1567ms 500 text/html; charset=utf-8
+2019-08-28 17:34:53.612 +03:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:5001/api/v1/book/delete/16 application/json; charset=utf-8 0
+2019-08-28 17:34:53.615 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.Delete (BookShare)'
+2019-08-28 17:34:53.617 +03:00 [INF] Route matched with {action = "Delete", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] Delete(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:34:53.621 +03:00 [INF] Executing action method BookShare.Web.Controllers.BookController.Delete (BookShare) - Validation state: "Valid"
+2019-08-28 17:34:56.558 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:34:56.588 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Title], [x].[Author], [x].[CoverUrl], [x].[ReleaseDate], [x].[Price]
+FROM [Book] AS [x]
+WHERE [x].[Id] = @__id_0
+ORDER BY [x].[Id]
+2019-08-28 17:34:56.763 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.Delete (BookShare) in 3142.0139000000004ms
+2019-08-28 17:34:56.765 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.Delete (BookShare)'
+2019-08-28 17:34:56.767 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at BookShare.Web.Services.BookEfService.GetByIdAsync(Int32 id) in C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\Services\BookEfService.cs:line 51
+   at BookShare.Web.Controllers.BookController.Delete(Int32 id) in C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\Controllers\BookController.cs:line 110
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-08-28 17:34:56.807 +03:00 [INF] Request finished in 3194.7316ms 500 text/html; charset=utf-8
+2019-08-28 17:35:08.426 +03:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:5001/api/v1/book/delete/31 application/json; charset=utf-8 0
+2019-08-28 17:35:08.429 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.Delete (BookShare)'
+2019-08-28 17:35:08.431 +03:00 [INF] Route matched with {action = "Delete", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] Delete(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:35:08.435 +03:00 [INF] Executing action method BookShare.Web.Controllers.BookController.Delete (BookShare) - Validation state: "Valid"
+2019-08-28 17:35:10.191 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:35:10.199 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Title], [x].[Author], [x].[CoverUrl], [x].[ReleaseDate], [x].[Price]
+FROM [Book] AS [x]
+WHERE [x].[Id] = @__id_0
+ORDER BY [x].[Id]
+2019-08-28 17:35:10.209 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x.Comments].[Id], [x.Comments].[Content], [x.Comments].[CreateDate], [x.Comments].[bookId], [t].[Id]
+FROM [Comments] AS [x.Comments]
+INNER JOIN (
+    SELECT TOP(1) [x0].[Id]
+    FROM [Book] AS [x0]
+    WHERE [x0].[Id] = @__id_0
+    ORDER BY [x0].[Id]
+) AS [t] ON [x.Comments].[bookId] = [t].[Id]
+WHERE [x.Comments].[bookId] = @__id_0
+ORDER BY [t].[Id], [x.Comments].[CreateDate] DESC
+2019-08-28 17:35:10.262 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Comments]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2019-08-28 17:35:10.269 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Book]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+2019-08-28 17:35:10.281 +03:00 [INF] Executed action method BookShare.Web.Controllers.BookController.Delete (BookShare), returned result Microsoft.AspNetCore.Mvc.JsonResult in 1841.8459ms.
+2019-08-28 17:35:10.286 +03:00 [INF] Executing JsonResult, writing value of type 'BookShare.Web.Models.Book'.
+2019-08-28 17:35:10.288 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.Delete (BookShare) in 1853.4521000000002ms
+2019-08-28 17:35:10.290 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.Delete (BookShare)'
+2019-08-28 17:35:10.293 +03:00 [INF] Request finished in 1866.8855ms 200 application/json; charset=utf-8
+2019-08-28 17:36:33.655 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:36:34.166 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Book] AS [b])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-08-28 17:36:34.269 +03:00 [INF] User profile is available. Using 'C:\Users\yilij\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-28 17:36:36.951 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-28 17:36:37.108 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.HomeController.Index (BookShare)'
+2019-08-28 17:36:37.141 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookShare.Web.Controllers.HomeController (BookShare).
+2019-08-28 17:36:37.164 +03:00 [INF] Executing action method BookShare.Web.Controllers.HomeController.Index (BookShare) - Validation state: "Valid"
+2019-08-28 17:36:37.167 +03:00 [INF] Visiting Home Index..
+2019-08-28 17:36:37.175 +03:00 [INF] Executed action method BookShare.Web.Controllers.HomeController.Index (BookShare), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3.0838ms.
+2019-08-28 17:36:37.209 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-28 17:36:37.860 +03:00 [INF] Executed ViewResult - view Index executed in 669.15820000000008ms.
+2019-08-28 17:36:37.874 +03:00 [INF] Executed action BookShare.Web.Controllers.HomeController.Index (BookShare) in 729.80220000000008ms
+2019-08-28 17:36:37.878 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.HomeController.Index (BookShare)'
+2019-08-28 17:36:37.902 +03:00 [INF] Request finished in 952.2232ms 200 text/html; charset=utf-8
+2019-08-28 17:36:38.526 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.css  
+2019-08-28 17:36:38.526 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/css/site.css  
+2019-08-28 17:36:38.540 +03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\wwwroot\css\site.css'
+2019-08-28 17:36:38.543 +03:00 [INF] Request finished in 16.661ms 200 text/css
+2019-08-28 17:36:38.575 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+2019-08-28 17:36:38.579 +03:00 [INF] Request finished in 53.1855ms 200 text/css
+2019-08-28 17:36:38.580 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery/dist/jquery.js  
+2019-08-28 17:36:38.581 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.js  
+2019-08-28 17:36:38.585 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery-validation/dist/jquery.validate.js  
+2019-08-28 17:36:38.591 +03:00 [INF] Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.js'. Physical path: 'C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\wwwroot\lib\jquery-validation\dist\jquery.validate.js'
+2019-08-28 17:36:38.597 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.js'. Physical path: 'C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js'
+2019-08-28 17:36:38.599 +03:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\wwwroot\lib\jquery\dist\jquery.js'
+2019-08-28 17:36:38.599 +03:00 [INF] Request finished in 14.1312ms 200 application/javascript
+2019-08-28 17:36:38.604 +03:00 [INF] Request finished in 22.9029ms 200 application/javascript
+2019-08-28 17:36:38.607 +03:00 [INF] Request finished in 26.9969ms 200 application/javascript
+2019-08-28 17:36:38.611 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js  
+2019-08-28 17:36:38.614 +03:00 [INF] Sending file. Request path: '/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js'. Physical path: 'C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js'
+2019-08-28 17:36:38.620 +03:00 [INF] Request finished in 8.8953ms 200 application/javascript
+2019-08-28 17:36:38.633 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/site.js  
+2019-08-28 17:36:38.634 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/mine/my1.js  
+2019-08-28 17:36:38.636 +03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\wwwroot\js\site.js'
+2019-08-28 17:36:38.638 +03:00 [INF] Sending file. Request path: '/js/mine/my1.js'. Physical path: 'C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\wwwroot\js\mine\my1.js'
+2019-08-28 17:36:38.640 +03:00 [INF] Request finished in 7.3756ms 200 application/javascript
+2019-08-28 17:36:38.642 +03:00 [INF] Request finished in 8.9607ms 200 application/javascript
+2019-08-28 17:36:38.660 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/mine/my2.js  
+2019-08-28 17:36:38.662 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/mine/my3.js  
+2019-08-28 17:36:38.662 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY  
+2019-08-28 17:36:38.663 +03:00 [INF] Sending file. Request path: '/js/mine/my2.js'. Physical path: 'C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\wwwroot\js\mine\my2.js'
+2019-08-28 17:36:38.665 +03:00 [INF] Sending file. Request path: '/js/mine/my3.js'. Physical path: 'C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\wwwroot\js\mine\my3.js'
+2019-08-28 17:36:38.669 +03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\yilij\Documents\GitHub\BookShare\Heavy.Web\wwwroot\js\site.js'
+2019-08-28 17:36:38.674 +03:00 [INF] Request finished in 13.251ms 200 application/javascript
+2019-08-28 17:36:38.677 +03:00 [INF] Request finished in 15.2422ms 200 application/javascript
+2019-08-28 17:36:38.680 +03:00 [INF] Request finished in 18.269ms 200 application/javascript
+2019-08-28 17:36:48.609 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/AllInfo  
+2019-08-28 17:36:48.616 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.ListAllInfo (BookShare)'
+2019-08-28 17:36:48.626 +03:00 [INF] Route matched with {action = "ListAllInfo", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ListAllInfo() on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:36:48.633 +03:00 [INF] Executing action method BookShare.Web.Controllers.BookController.ListAllInfo (BookShare) - Validation state: "Valid"
+2019-08-28 17:36:48.645 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:36:48.957 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Title], [x].[Author], [x].[CoverUrl], [x].[ReleaseDate], [x].[Price]
+FROM [Book] AS [x]
+ORDER BY [x].[Id]
+2019-08-28 17:36:49.010 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x.Comments].[Id], [x.Comments].[Content], [x.Comments].[CreateDate], [x.Comments].[bookId], [t].[Id]
+FROM [Comments] AS [x.Comments]
+INNER JOIN (
+    SELECT [x0].[Id]
+    FROM [Book] AS [x0]
+) AS [t] ON [x.Comments].[bookId] = [t].[Id]
+ORDER BY [t].[Id], [x.Comments].[CreateDate] DESC
+2019-08-28 17:36:49.075 +03:00 [INF] Executed action method BookShare.Web.Controllers.BookController.ListAllInfo (BookShare), returned result Microsoft.AspNetCore.Mvc.JsonResult in 438.594ms.
+2019-08-28 17:36:49.086 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Book, BookShare, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-28 17:36:49.162 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.ListAllInfo (BookShare) in 530.3488ms
+2019-08-28 17:36:49.163 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.ListAllInfo (BookShare)'
+2019-08-28 17:36:49.165 +03:00 [INF] Request finished in 556.1755ms 200 application/json; charset=utf-8
+2019-08-28 17:37:25.649 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/View/14  
+2019-08-28 17:37:25.657 +03:00 [INF] Request finished in 7.7652ms 404 text/plain
+2019-08-28 17:38:20.354 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/AllInfo  
+2019-08-28 17:38:20.355 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.ListAllInfo (BookShare)'
+2019-08-28 17:38:20.357 +03:00 [INF] Route matched with {action = "ListAllInfo", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ListAllInfo() on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:38:20.361 +03:00 [INF] Executing action method BookShare.Web.Controllers.BookController.ListAllInfo (BookShare) - Validation state: "Valid"
+2019-08-28 17:38:20.369 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:38:20.381 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Title], [x].[Author], [x].[CoverUrl], [x].[ReleaseDate], [x].[Price]
+FROM [Book] AS [x]
+ORDER BY [x].[Id]
+2019-08-28 17:38:20.391 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x.Comments].[Id], [x.Comments].[Content], [x.Comments].[CreateDate], [x.Comments].[bookId], [t].[Id]
+FROM [Comments] AS [x.Comments]
+INNER JOIN (
+    SELECT [x0].[Id]
+    FROM [Book] AS [x0]
+) AS [t] ON [x.Comments].[bookId] = [t].[Id]
+ORDER BY [t].[Id], [x.Comments].[CreateDate] DESC
+2019-08-28 17:38:20.397 +03:00 [INF] Executed action method BookShare.Web.Controllers.BookController.ListAllInfo (BookShare), returned result Microsoft.AspNetCore.Mvc.JsonResult in 28.9827ms.
+2019-08-28 17:38:20.400 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Book, BookShare, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-28 17:38:20.403 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.ListAllInfo (BookShare) in 42.649100000000004ms
+2019-08-28 17:38:20.405 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.ListAllInfo (BookShare)'
+2019-08-28 17:38:20.407 +03:00 [INF] Request finished in 53.6902ms 200 application/json; charset=utf-8
+2019-08-28 17:38:23.569 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/View application/json; charset=utf-8 7
+2019-08-28 17:38:23.571 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:38:23.590 +03:00 [INF] Route matched with {action = "View", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] View(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:38:23.633 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2019-08-28 17:38:23.650 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.View (BookShare) in 56.034200000000006ms
+2019-08-28 17:38:23.660 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:38:23.665 +03:00 [INF] Request finished in 95.6999ms 400 application/json; charset=utf-8
+2019-08-28 17:39:01.144 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/View application/json; charset=utf-8 7
+2019-08-28 17:39:01.145 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:39:01.147 +03:00 [INF] Route matched with {action = "View", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] View(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:39:01.154 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2019-08-28 17:39:01.156 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.View (BookShare) in 4.479ms
+2019-08-28 17:39:01.158 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:39:01.161 +03:00 [INF] Request finished in 16.696ms 400 application/json; charset=utf-8
+2019-08-28 17:39:53.439 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/View application/json; charset=utf-8 20
+2019-08-28 17:39:53.441 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:39:53.443 +03:00 [INF] Route matched with {action = "View", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] View(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:39:53.448 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2019-08-28 17:39:53.451 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.View (BookShare) in 3.8336ms
+2019-08-28 17:39:53.454 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:39:53.456 +03:00 [INF] Request finished in 17.089ms 400 application/json; charset=utf-8
+2019-08-28 17:40:16.169 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/View application/json; charset=utf-8 21
+2019-08-28 17:40:16.171 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:40:16.173 +03:00 [INF] Route matched with {action = "View", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] View(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:40:16.178 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2019-08-28 17:40:16.180 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.View (BookShare) in 3.2024000000000004ms
+2019-08-28 17:40:16.182 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:40:16.185 +03:00 [INF] Request finished in 16.229ms 400 application/json; charset=utf-8
+2019-08-28 17:40:32.497 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/View application/json; charset=utf-8 23
+2019-08-28 17:40:32.498 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:40:32.501 +03:00 [INF] Route matched with {action = "View", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] View(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:40:32.508 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2019-08-28 17:40:32.510 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.View (BookShare) in 2.4571ms
+2019-08-28 17:40:32.512 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:40:32.514 +03:00 [INF] Request finished in 17.6168ms 400 application/json; charset=utf-8
+2019-08-28 17:40:50.107 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/AllInfo  
+2019-08-28 17:40:50.109 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.ListAllInfo (BookShare)'
+2019-08-28 17:40:50.111 +03:00 [INF] Route matched with {action = "ListAllInfo", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ListAllInfo() on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:40:50.115 +03:00 [INF] Executing action method BookShare.Web.Controllers.BookController.ListAllInfo (BookShare) - Validation state: "Valid"
+2019-08-28 17:40:50.120 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:40:50.125 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Title], [x].[Author], [x].[CoverUrl], [x].[ReleaseDate], [x].[Price]
+FROM [Book] AS [x]
+ORDER BY [x].[Id]
+2019-08-28 17:40:50.133 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x.Comments].[Id], [x.Comments].[Content], [x.Comments].[CreateDate], [x.Comments].[bookId], [t].[Id]
+FROM [Comments] AS [x.Comments]
+INNER JOIN (
+    SELECT [x0].[Id]
+    FROM [Book] AS [x0]
+) AS [t] ON [x.Comments].[bookId] = [t].[Id]
+ORDER BY [t].[Id], [x.Comments].[CreateDate] DESC
+2019-08-28 17:40:50.143 +03:00 [INF] Executed action method BookShare.Web.Controllers.BookController.ListAllInfo (BookShare), returned result Microsoft.AspNetCore.Mvc.JsonResult in 23.585900000000002ms.
+2019-08-28 17:40:50.145 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Book, BookShare, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-28 17:40:50.149 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.ListAllInfo (BookShare) in 34.068200000000004ms
+2019-08-28 17:40:50.150 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.ListAllInfo (BookShare)'
+2019-08-28 17:40:50.152 +03:00 [INF] Request finished in 45.0137ms 200 application/json; charset=utf-8
+2019-08-28 17:41:39.734 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/View multipart/form-data; boundary=--------------------------165702656082537486252539 159
+2019-08-28 17:41:39.737 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:41:39.739 +03:00 [INF] Route matched with {action = "View", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] View(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:41:39.765 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2019-08-28 17:41:39.771 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.View (BookShare) in 28.9951ms
+2019-08-28 17:41:39.773 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:41:39.776 +03:00 [INF] Request finished in 41.7701ms 415 application/json; charset=utf-8
+2019-08-28 17:41:56.103 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/View application/json; charset=utf-8 20
+2019-08-28 17:41:56.105 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:41:56.107 +03:00 [INF] Route matched with {action = "View", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] View(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:41:56.111 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2019-08-28 17:41:56.113 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.View (BookShare) in 2.3033ms
+2019-08-28 17:41:56.117 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:41:56.119 +03:00 [INF] Request finished in 15.9374ms 400 application/json; charset=utf-8
+2019-08-28 17:42:31.714 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/ViewComment application/json; charset=utf-8 20
+2019-08-28 17:42:31.717 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.ViewComment (BookShare)'
+2019-08-28 17:42:31.724 +03:00 [INF] Route matched with {action = "ViewComment", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ViewComment(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:42:31.730 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2019-08-28 17:42:31.732 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.ViewComment (BookShare) in 3.0413ms
+2019-08-28 17:42:31.736 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.ViewComment (BookShare)'
+2019-08-28 17:42:31.739 +03:00 [INF] Request finished in 25.0142ms 400 application/json; charset=utf-8
+2019-08-28 17:42:37.893 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/view application/json; charset=utf-8 20
+2019-08-28 17:42:37.894 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:42:37.896 +03:00 [INF] Route matched with {action = "View", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] View(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:42:37.903 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2019-08-28 17:42:37.906 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.View (BookShare) in 3.8787000000000003ms
+2019-08-28 17:42:37.916 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:42:37.919 +03:00 [INF] Request finished in 25.8231ms 400 application/json; charset=utf-8
+2019-08-28 17:42:56.107 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/view application/json 20
+2019-08-28 17:42:56.109 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:42:56.111 +03:00 [INF] Route matched with {action = "View", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] View(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:42:56.116 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2019-08-28 17:42:56.119 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.View (BookShare) in 3.9982ms
+2019-08-28 17:42:56.121 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:42:56.123 +03:00 [INF] Request finished in 16.587ms 400 application/json; charset=utf-8
+2019-08-28 17:44:46.470 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:44:46.974 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Book] AS [b])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-08-28 17:44:47.069 +03:00 [INF] User profile is available. Using 'C:\Users\yilij\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-28 17:44:49.576 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-28 17:44:49.692 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.HomeController.Index (BookShare)'
+2019-08-28 17:44:49.717 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookShare.Web.Controllers.HomeController (BookShare).
+2019-08-28 17:44:49.738 +03:00 [INF] Executing action method BookShare.Web.Controllers.HomeController.Index (BookShare) - Validation state: "Valid"
+2019-08-28 17:44:49.740 +03:00 [INF] Visiting Home Index..
+2019-08-28 17:44:49.745 +03:00 [INF] Executed action method BookShare.Web.Controllers.HomeController.Index (BookShare), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.9580000000000002ms.
+2019-08-28 17:44:49.775 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-28 17:44:50.358 +03:00 [INF] Executed ViewResult - view Index executed in 598.9317ms.
+2019-08-28 17:44:50.370 +03:00 [INF] Executed action BookShare.Web.Controllers.HomeController.Index (BookShare) in 649.62610000000006ms
+2019-08-28 17:44:50.373 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.HomeController.Index (BookShare)'
+2019-08-28 17:44:50.416 +03:00 [INF] Request finished in 840.4094ms 200 text/html; charset=utf-8
+2019-08-28 17:44:54.377 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/AllInfo  
+2019-08-28 17:44:54.386 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.ListAllInfo (BookShare)'
+2019-08-28 17:44:54.394 +03:00 [INF] Route matched with {action = "ListAllInfo", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ListAllInfo() on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:44:54.401 +03:00 [INF] Executing action method BookShare.Web.Controllers.BookController.ListAllInfo (BookShare) - Validation state: "Valid"
+2019-08-28 17:44:54.413 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:44:54.742 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Title], [x].[Author], [x].[CoverUrl], [x].[ReleaseDate], [x].[Price]
+FROM [Book] AS [x]
+ORDER BY [x].[Id]
+2019-08-28 17:44:54.798 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x.Comments].[Id], [x.Comments].[Content], [x.Comments].[CreateDate], [x.Comments].[bookId], [t].[Id]
+FROM [Comments] AS [x.Comments]
+INNER JOIN (
+    SELECT [x0].[Id]
+    FROM [Book] AS [x0]
+) AS [t] ON [x.Comments].[bookId] = [t].[Id]
+ORDER BY [t].[Id], [x.Comments].[CreateDate] DESC
+2019-08-28 17:44:54.874 +03:00 [INF] Executed action method BookShare.Web.Controllers.BookController.ListAllInfo (BookShare), returned result Microsoft.AspNetCore.Mvc.JsonResult in 470.3287ms.
+2019-08-28 17:44:54.886 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Book, BookShare, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-28 17:44:54.955 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.ListAllInfo (BookShare) in 554.736ms
+2019-08-28 17:44:54.957 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.ListAllInfo (BookShare)'
+2019-08-28 17:44:54.959 +03:00 [INF] Request finished in 582.3984ms 200 application/json; charset=utf-8
+2019-08-28 17:44:56.906 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/view application/json 18
+2019-08-28 17:44:56.913 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:44:56.939 +03:00 [INF] Route matched with {action = "View", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] View(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:44:56.980 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2019-08-28 17:44:56.997 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.View (BookShare) in 53.919700000000006ms
+2019-08-28 17:44:56.999 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:44:57.002 +03:00 [INF] Request finished in 95.8396ms 400 application/json; charset=utf-8
+2019-08-28 17:45:34.306 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/View/15 application/json 18
+2019-08-28 17:45:34.308 +03:00 [INF] Request finished in 2.6096ms 404 text/plain
+2019-08-28 17:45:34.312 +03:00 [INF] Connection id "0HLPBOP34CEF2", Request id "0HLPBOP34CEF2:00000003": the application completed without reading the entire request body.
+2019-08-28 17:45:40.161 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/View application/json 18
+2019-08-28 17:45:40.163 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:45:40.165 +03:00 [INF] Route matched with {action = "View", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] View(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:45:40.170 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2019-08-28 17:45:40.173 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.View (BookShare) in 3.6695ms
+2019-08-28 17:45:40.174 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:45:40.177 +03:00 [INF] Request finished in 15.5477ms 400 application/json; charset=utf-8
+2019-08-28 17:46:26.247 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:46:26.853 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Book] AS [b])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-08-28 17:46:26.951 +03:00 [INF] User profile is available. Using 'C:\Users\yilij\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-28 17:46:29.446 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-28 17:46:29.557 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.HomeController.Index (BookShare)'
+2019-08-28 17:46:29.591 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookShare.Web.Controllers.HomeController (BookShare).
+2019-08-28 17:46:29.609 +03:00 [INF] Executing action method BookShare.Web.Controllers.HomeController.Index (BookShare) - Validation state: "Valid"
+2019-08-28 17:46:29.612 +03:00 [INF] Visiting Home Index..
+2019-08-28 17:46:29.618 +03:00 [INF] Executed action method BookShare.Web.Controllers.HomeController.Index (BookShare), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.2719ms.
+2019-08-28 17:46:29.649 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-28 17:46:30.272 +03:00 [INF] Executed ViewResult - view Index executed in 640.7559ms.
+2019-08-28 17:46:30.284 +03:00 [INF] Executed action BookShare.Web.Controllers.HomeController.Index (BookShare) in 690.52ms
+2019-08-28 17:46:30.287 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.HomeController.Index (BookShare)'
+2019-08-28 17:46:30.307 +03:00 [INF] Request finished in 862.2625ms 200 text/html; charset=utf-8
+2019-08-28 17:46:36.287 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/View?id=14 application/json 18
+2019-08-28 17:46:36.294 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:46:36.321 +03:00 [INF] Route matched with {action = "View", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] View(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:46:36.340 +03:00 [INF] Executing action method BookShare.Web.Controllers.BookController.View (BookShare) - Validation state: "Valid"
+2019-08-28 17:46:38.508 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:46:38.875 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Title], [x].[Author], [x].[CoverUrl], [x].[ReleaseDate], [x].[Price]
+FROM [Book] AS [x]
+WHERE [x].[Id] = @__id_0
+ORDER BY [x].[Id]
+2019-08-28 17:46:38.933 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x.Comments].[Id], [x.Comments].[Content], [x.Comments].[CreateDate], [x.Comments].[bookId], [t].[Id]
+FROM [Comments] AS [x.Comments]
+INNER JOIN (
+    SELECT TOP(1) [x0].[Id]
+    FROM [Book] AS [x0]
+    WHERE [x0].[Id] = @__id_0
+    ORDER BY [x0].[Id]
+) AS [t] ON [x.Comments].[bookId] = [t].[Id]
+WHERE [x.Comments].[bookId] = @__id_0
+ORDER BY [t].[Id], [x.Comments].[CreateDate] DESC
+2019-08-28 17:46:39.019 +03:00 [INF] Executed action method BookShare.Web.Controllers.BookController.View (BookShare), returned result Microsoft.AspNetCore.Mvc.JsonResult in 2677.7186ms.
+2019-08-28 17:46:39.030 +03:00 [INF] Executing JsonResult, writing value of type 'BookShare.Web.Models.Book'.
+2019-08-28 17:46:39.096 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.View (BookShare) in 2771.1009ms
+2019-08-28 17:46:39.098 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:46:39.100 +03:00 [INF] Request finished in 2812.8673ms 200 application/json; charset=utf-8
+2019-08-28 17:46:39.111 +03:00 [INF] Connection id "0HLPBOQ0SGA5S", Request id "0HLPBOQ0SGA5S:00000001": the application completed without reading the entire request body.
+2019-08-28 17:47:05.002 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:47:05.543 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Book] AS [b])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-08-28 17:47:05.643 +03:00 [INF] User profile is available. Using 'C:\Users\yilij\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-28 17:47:08.117 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-28 17:47:08.224 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.HomeController.Index (BookShare)'
+2019-08-28 17:47:08.256 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookShare.Web.Controllers.HomeController (BookShare).
+2019-08-28 17:47:08.277 +03:00 [INF] Executing action method BookShare.Web.Controllers.HomeController.Index (BookShare) - Validation state: "Valid"
+2019-08-28 17:47:08.280 +03:00 [INF] Visiting Home Index..
+2019-08-28 17:47:08.286 +03:00 [INF] Executed action method BookShare.Web.Controllers.HomeController.Index (BookShare), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.5144ms.
+2019-08-28 17:47:08.334 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-28 17:47:09.006 +03:00 [INF] Executed ViewResult - view Index executed in 704.38970000000006ms.
+2019-08-28 17:47:09.024 +03:00 [INF] Executed action BookShare.Web.Controllers.HomeController.Index (BookShare) in 764.6005ms
+2019-08-28 17:47:09.028 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.HomeController.Index (BookShare)'
+2019-08-28 17:47:09.062 +03:00 [INF] Request finished in 945.9103ms 200 text/html; charset=utf-8
+2019-08-28 17:47:15.509 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/View?id=14 application/json 18
+2019-08-28 17:47:15.518 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:47:15.545 +03:00 [INF] Route matched with {action = "View", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] View(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:47:15.636 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2019-08-28 17:47:15.679 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.View (BookShare) in 129.7715ms
+2019-08-28 17:47:15.681 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:47:15.684 +03:00 [INF] Request finished in 174.8334ms 400 application/json; charset=utf-8
+2019-08-28 17:48:49.365 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/View?id=14 application/json 18
+2019-08-28 17:48:49.371 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:48:49.373 +03:00 [INF] Route matched with {action = "View", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] View(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:48:49.385 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2019-08-28 17:48:49.388 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.View (BookShare) in 10.3106ms
+2019-08-28 17:48:49.393 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:48:49.397 +03:00 [INF] Request finished in 31.8275ms 400 application/json; charset=utf-8
+2019-08-28 17:49:32.729 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:49:33.221 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Book] AS [b])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-08-28 17:49:33.318 +03:00 [INF] User profile is available. Using 'C:\Users\yilij\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-28 17:49:35.957 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-28 17:49:36.071 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.HomeController.Index (BookShare)'
+2019-08-28 17:49:36.095 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookShare.Web.Controllers.HomeController (BookShare).
+2019-08-28 17:49:36.113 +03:00 [INF] Executing action method BookShare.Web.Controllers.HomeController.Index (BookShare) - Validation state: "Valid"
+2019-08-28 17:49:36.116 +03:00 [INF] Visiting Home Index..
+2019-08-28 17:49:36.121 +03:00 [INF] Executed action method BookShare.Web.Controllers.HomeController.Index (BookShare), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.5485ms.
+2019-08-28 17:49:36.150 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-28 17:49:36.759 +03:00 [INF] Executed ViewResult - view Index executed in 622.06310000000008ms.
+2019-08-28 17:49:36.769 +03:00 [INF] Executed action BookShare.Web.Controllers.HomeController.Index (BookShare) in 671.0113ms
+2019-08-28 17:49:36.772 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.HomeController.Index (BookShare)'
+2019-08-28 17:49:36.791 +03:00 [INF] Request finished in 837.2422ms 200 text/html; charset=utf-8
+2019-08-28 17:49:39.035 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/View?id=14 application/json 18
+2019-08-28 17:49:39.043 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:49:39.069 +03:00 [INF] Route matched with {action = "View", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] View(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:49:39.087 +03:00 [INF] Executing action method BookShare.Web.Controllers.BookController.View (BookShare) - Validation state: "Valid"
+2019-08-28 17:49:40.846 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:49:41.188 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Title], [x].[Author], [x].[CoverUrl], [x].[ReleaseDate], [x].[Price]
+FROM [Book] AS [x]
+WHERE [x].[Id] = @__id_0
+ORDER BY [x].[Id]
+2019-08-28 17:49:41.248 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x.Comments].[Id], [x.Comments].[Content], [x.Comments].[CreateDate], [x.Comments].[bookId], [t].[Id]
+FROM [Comments] AS [x.Comments]
+INNER JOIN (
+    SELECT TOP(1) [x0].[Id]
+    FROM [Book] AS [x0]
+    WHERE [x0].[Id] = @__id_0
+    ORDER BY [x0].[Id]
+) AS [t] ON [x.Comments].[bookId] = [t].[Id]
+WHERE [x.Comments].[bookId] = @__id_0
+ORDER BY [t].[Id], [x.Comments].[CreateDate] DESC
+2019-08-28 17:49:41.332 +03:00 [INF] Executed action method BookShare.Web.Controllers.BookController.View (BookShare), returned result Microsoft.AspNetCore.Mvc.JsonResult in 2243.065ms.
+2019-08-28 17:49:41.343 +03:00 [INF] Executing JsonResult, writing value of type 'BookShare.Web.Models.Book'.
+2019-08-28 17:49:41.410 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.View (BookShare) in 2338.0088ms
+2019-08-28 17:49:41.413 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:49:41.415 +03:00 [INF] Request finished in 2380.0543ms 200 application/json; charset=utf-8
+2019-08-28 17:49:41.426 +03:00 [INF] Connection id "0HLPBOROF4O64", Request id "0HLPBOROF4O64:00000001": the application completed without reading the entire request body.
+2019-08-28 17:50:36.334 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:50:36.840 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Book] AS [b])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-08-28 17:50:36.954 +03:00 [INF] User profile is available. Using 'C:\Users\yilij\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-28 17:50:39.603 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-28 17:50:39.724 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.HomeController.Index (BookShare)'
+2019-08-28 17:50:39.754 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookShare.Web.Controllers.HomeController (BookShare).
+2019-08-28 17:50:39.772 +03:00 [INF] Executing action method BookShare.Web.Controllers.HomeController.Index (BookShare) - Validation state: "Valid"
+2019-08-28 17:50:39.774 +03:00 [INF] Visiting Home Index..
+2019-08-28 17:50:39.781 +03:00 [INF] Executed action method BookShare.Web.Controllers.HomeController.Index (BookShare), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.0358ms.
+2019-08-28 17:50:39.820 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-28 17:50:40.413 +03:00 [INF] Executed ViewResult - view Index executed in 617.3699ms.
+2019-08-28 17:50:40.424 +03:00 [INF] Executed action BookShare.Web.Controllers.HomeController.Index (BookShare) in 667.3307ms
+2019-08-28 17:50:40.427 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.HomeController.Index (BookShare)'
+2019-08-28 17:50:40.455 +03:00 [INF] Request finished in 853.0735ms 200 text/html; charset=utf-8
+2019-08-28 17:50:43.827 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/AllInfo  
+2019-08-28 17:50:43.835 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.ListAllInfo (BookShare)'
+2019-08-28 17:50:43.845 +03:00 [INF] Route matched with {action = "ListAllInfo", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ListAllInfo() on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:50:43.852 +03:00 [INF] Executing action method BookShare.Web.Controllers.BookController.ListAllInfo (BookShare) - Validation state: "Valid"
+2019-08-28 17:50:43.866 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:50:44.177 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Title], [x].[Author], [x].[CoverUrl], [x].[ReleaseDate], [x].[Price]
+FROM [Book] AS [x]
+ORDER BY [x].[Id]
+2019-08-28 17:50:44.230 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [x.Comments].[Id], [x.Comments].[Content], [x.Comments].[CreateDate], [x.Comments].[bookId], [t].[Id]
+FROM [Comments] AS [x.Comments]
+INNER JOIN (
+    SELECT [x0].[Id]
+    FROM [Book] AS [x0]
+) AS [t] ON [x.Comments].[bookId] = [t].[Id]
+ORDER BY [t].[Id], [x.Comments].[CreateDate] DESC
+2019-08-28 17:50:44.293 +03:00 [INF] Executed action method BookShare.Web.Controllers.BookController.ListAllInfo (BookShare), returned result Microsoft.AspNetCore.Mvc.JsonResult in 438.71750000000003ms.
+2019-08-28 17:50:44.305 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Book, BookShare, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-28 17:50:44.372 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.ListAllInfo (BookShare) in 522.4038ms
+2019-08-28 17:50:44.375 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.ListAllInfo (BookShare)'
+2019-08-28 17:50:44.377 +03:00 [INF] Request finished in 550.0556ms 200 application/json; charset=utf-8
+2019-08-28 17:50:52.581 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/View?id=14 application/json 18
+2019-08-28 17:50:52.590 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:50:52.623 +03:00 [INF] Route matched with {action = "View", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] View(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:50:52.644 +03:00 [INF] Executing action method BookShare.Web.Controllers.BookController.View (BookShare) - Validation state: "Valid"
+2019-08-28 17:50:52.651 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:50:52.712 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Title], [x].[Author], [x].[CoverUrl], [x].[ReleaseDate], [x].[Price]
+FROM [Book] AS [x]
+WHERE [x].[Id] = @__id_0
+ORDER BY [x].[Id]
+2019-08-28 17:50:52.733 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x.Comments].[Id], [x.Comments].[Content], [x.Comments].[CreateDate], [x.Comments].[bookId], [t].[Id]
+FROM [Comments] AS [x.Comments]
+INNER JOIN (
+    SELECT TOP(1) [x0].[Id]
+    FROM [Book] AS [x0]
+    WHERE [x0].[Id] = @__id_0
+    ORDER BY [x0].[Id]
+) AS [t] ON [x.Comments].[bookId] = [t].[Id]
+WHERE [x.Comments].[bookId] = @__id_0
+ORDER BY [t].[Id], [x.Comments].[CreateDate] DESC
+2019-08-28 17:50:52.786 +03:00 [INF] Executed action method BookShare.Web.Controllers.BookController.View (BookShare), returned result Microsoft.AspNetCore.Mvc.JsonResult in 139.70000000000002ms.
+2019-08-28 17:50:52.816 +03:00 [INF] Executing JsonResult, writing value of type 'BookShare.Web.Models.Book'.
+2019-08-28 17:50:52.818 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.View (BookShare) in 189.799ms
+2019-08-28 17:50:52.820 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:50:52.824 +03:00 [INF] Request finished in 242.2887ms 200 application/json; charset=utf-8
+2019-08-28 17:50:52.837 +03:00 [INF] Connection id "0HLPBOSBE3L06", Request id "0HLPBOSBE3L06:00000002": the application completed without reading the entire request body.
+2019-08-28 17:51:03.557 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/View?id=14  
+2019-08-28 17:51:03.559 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:51:03.561 +03:00 [INF] Route matched with {action = "View", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] View(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:51:03.569 +03:00 [INF] Executing action method BookShare.Web.Controllers.BookController.View (BookShare) - Validation state: "Valid"
+2019-08-28 17:51:03.572 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:51:03.584 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Title], [x].[Author], [x].[CoverUrl], [x].[ReleaseDate], [x].[Price]
+FROM [Book] AS [x]
+WHERE [x].[Id] = @__id_0
+ORDER BY [x].[Id]
+2019-08-28 17:51:03.590 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x.Comments].[Id], [x.Comments].[Content], [x.Comments].[CreateDate], [x.Comments].[bookId], [t].[Id]
+FROM [Comments] AS [x.Comments]
+INNER JOIN (
+    SELECT TOP(1) [x0].[Id]
+    FROM [Book] AS [x0]
+    WHERE [x0].[Id] = @__id_0
+    ORDER BY [x0].[Id]
+) AS [t] ON [x.Comments].[bookId] = [t].[Id]
+WHERE [x.Comments].[bookId] = @__id_0
+ORDER BY [t].[Id], [x.Comments].[CreateDate] DESC
+2019-08-28 17:51:03.598 +03:00 [INF] Executed action method BookShare.Web.Controllers.BookController.View (BookShare), returned result Microsoft.AspNetCore.Mvc.JsonResult in 26.243000000000002ms.
+2019-08-28 17:51:03.601 +03:00 [INF] Executing JsonResult, writing value of type 'BookShare.Web.Models.Book'.
+2019-08-28 17:51:03.603 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.View (BookShare) in 34.9985ms
+2019-08-28 17:51:03.604 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:51:03.608 +03:00 [INF] Request finished in 50.5379ms 200 application/json; charset=utf-8
+2019-08-28 17:51:22.775 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/ViewComment  
+2019-08-28 17:51:22.777 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.ViewComment (BookShare)'
+2019-08-28 17:51:22.785 +03:00 [INF] Route matched with {action = "ViewComment", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ViewComment(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:51:22.802 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2019-08-28 17:51:22.816 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.ViewComment (BookShare) in 26.4711ms
+2019-08-28 17:51:22.818 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.ViewComment (BookShare)'
+2019-08-28 17:51:22.820 +03:00 [INF] Request finished in 45.6976ms 415 application/json; charset=utf-8
+2019-08-28 17:51:47.678 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/ViewComment text/plain 9
+2019-08-28 17:51:47.680 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.ViewComment (BookShare)'
+2019-08-28 17:51:47.682 +03:00 [INF] Route matched with {action = "ViewComment", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ViewComment(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:51:47.689 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2019-08-28 17:51:47.690 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.ViewComment (BookShare) in 2.1762ms
+2019-08-28 17:51:47.692 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.ViewComment (BookShare)'
+2019-08-28 17:51:47.695 +03:00 [INF] Request finished in 16.8641ms 415 application/json; charset=utf-8
+2019-08-28 17:51:47.697 +03:00 [INF] Connection id "0HLPBOSBE3L06", Request id "0HLPBOSBE3L06:00000005": the application completed without reading the entire request body.
+2019-08-28 17:52:46.910 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/ViewComment text/plain 4
+2019-08-28 17:52:46.915 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.ViewComment (BookShare)'
+2019-08-28 17:52:46.917 +03:00 [INF] Route matched with {action = "ViewComment", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ViewComment(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:52:46.924 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2019-08-28 17:52:46.926 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.ViewComment (BookShare) in 2.2915ms
+2019-08-28 17:52:46.928 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.ViewComment (BookShare)'
+2019-08-28 17:52:46.931 +03:00 [INF] Request finished in 21.188ms 415 application/json; charset=utf-8
+2019-08-28 17:52:46.934 +03:00 [INF] Connection id "0HLPBOSBE3L06", Request id "0HLPBOSBE3L06:00000006": the application completed without reading the entire request body.
+2019-08-28 17:52:54.830 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/ViewComment text/plain 9
+2019-08-28 17:52:54.832 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.ViewComment (BookShare)'
+2019-08-28 17:52:54.834 +03:00 [INF] Route matched with {action = "ViewComment", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ViewComment(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:52:54.839 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2019-08-28 17:52:54.842 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.ViewComment (BookShare) in 3.1746000000000003ms
+2019-08-28 17:52:54.844 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.ViewComment (BookShare)'
+2019-08-28 17:52:54.847 +03:00 [INF] Request finished in 16.7152ms 415 application/json; charset=utf-8
+2019-08-28 17:52:54.849 +03:00 [INF] Connection id "0HLPBOSBE3L06", Request id "0HLPBOSBE3L06:00000007": the application completed without reading the entire request body.
+2019-08-28 17:53:37.820 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/ViewComment application/json 9
+2019-08-28 17:53:37.822 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.ViewComment (BookShare)'
+2019-08-28 17:53:37.825 +03:00 [INF] Route matched with {action = "ViewComment", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ViewComment(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:53:37.840 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2019-08-28 17:53:37.851 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.ViewComment (BookShare) in 21.9704ms
+2019-08-28 17:53:37.853 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.ViewComment (BookShare)'
+2019-08-28 17:53:37.855 +03:00 [INF] Request finished in 35.1177ms 400 application/json; charset=utf-8
+2019-08-28 17:55:51.027 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:55:51.538 +03:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Book] AS [b])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2019-08-28 17:55:51.637 +03:00 [INF] User profile is available. Using 'C:\Users\yilij\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-08-28 17:55:54.247 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-08-28 17:55:54.371 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.HomeController.Index (BookShare)'
+2019-08-28 17:55:54.401 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BookShare.Web.Controllers.HomeController (BookShare).
+2019-08-28 17:55:54.419 +03:00 [INF] Executing action method BookShare.Web.Controllers.HomeController.Index (BookShare) - Validation state: "Valid"
+2019-08-28 17:55:54.421 +03:00 [INF] Visiting Home Index..
+2019-08-28 17:55:54.425 +03:00 [INF] Executed action method BookShare.Web.Controllers.HomeController.Index (BookShare), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.8672000000000002ms.
+2019-08-28 17:55:54.452 +03:00 [INF] Executing ViewResult, running view Index.
+2019-08-28 17:55:55.064 +03:00 [INF] Executed ViewResult - view Index executed in 626.86840000000007ms.
+2019-08-28 17:55:55.076 +03:00 [INF] Executed action BookShare.Web.Controllers.HomeController.Index (BookShare) in 672.17230000000006ms
+2019-08-28 17:55:55.080 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.HomeController.Index (BookShare)'
+2019-08-28 17:55:55.104 +03:00 [INF] Request finished in 859.4869ms 200 text/html; charset=utf-8
+2019-08-28 17:56:00.029 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/View?id=14 application/json 18
+2019-08-28 17:56:00.036 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:56:00.062 +03:00 [INF] Route matched with {action = "View", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] View(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:56:00.082 +03:00 [INF] Executing action method BookShare.Web.Controllers.BookController.View (BookShare) - Validation state: "Valid"
+2019-08-28 17:56:00.095 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:56:00.457 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Title], [x].[Author], [x].[CoverUrl], [x].[ReleaseDate], [x].[Price]
+FROM [Book] AS [x]
+WHERE [x].[Id] = @__id_0
+ORDER BY [x].[Id]
+2019-08-28 17:56:00.517 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x.Comments].[Id], [x.Comments].[Content], [x.Comments].[CreateDate], [x.Comments].[bookId], [t].[Id]
+FROM [Comments] AS [x.Comments]
+INNER JOIN (
+    SELECT TOP(1) [x0].[Id]
+    FROM [Book] AS [x0]
+    WHERE [x0].[Id] = @__id_0
+    ORDER BY [x0].[Id]
+) AS [t] ON [x.Comments].[bookId] = [t].[Id]
+WHERE [x.Comments].[bookId] = @__id_0
+ORDER BY [t].[Id], [x.Comments].[CreateDate] DESC
+2019-08-28 17:56:00.587 +03:00 [INF] Executed action method BookShare.Web.Controllers.BookController.View (BookShare), returned result Microsoft.AspNetCore.Mvc.JsonResult in 502.35760000000005ms.
+2019-08-28 17:56:00.598 +03:00 [INF] Executing JsonResult, writing value of type 'BookShare.Web.Models.Book'.
+2019-08-28 17:56:00.671 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.View (BookShare) in 605.2367ms
+2019-08-28 17:56:00.673 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.View (BookShare)'
+2019-08-28 17:56:00.676 +03:00 [INF] Request finished in 647.5952ms 200 application/json; charset=utf-8
+2019-08-28 17:56:00.690 +03:00 [INF] Connection id "0HLPBOV970F38", Request id "0HLPBOV970F38:00000001": the application completed without reading the entire request body.
+2019-08-28 17:56:06.347 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/v1/book/ViewComment/14 application/json 9
+2019-08-28 17:56:06.357 +03:00 [INF] Executing endpoint 'BookShare.Web.Controllers.BookController.ViewComment (BookShare)'
+2019-08-28 17:56:06.370 +03:00 [INF] Route matched with {action = "ViewComment", controller = "Book", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] ViewComment(Int32) on controller BookShare.Web.Controllers.BookController (BookShare).
+2019-08-28 17:56:06.376 +03:00 [INF] Executing action method BookShare.Web.Controllers.BookController.ViewComment (BookShare) - Validation state: "Valid"
+2019-08-28 17:56:12.006 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'BookContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-08-28 17:56:12.038 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [x].[Id], [x].[Content], [x].[CreateDate], [x].[bookId]
+FROM [Comments] AS [x]
+WHERE [x].[bookId] = @__id_0
+2019-08-28 17:56:12.094 +03:00 [INF] Executed action method BookShare.Web.Controllers.BookController.ViewComment (BookShare), returned result Microsoft.AspNetCore.Mvc.JsonResult in 5712.8354ms.
+2019-08-28 17:56:12.097 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[BookShare.Web.Models.Comment, BookShare, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-08-28 17:56:12.099 +03:00 [INF] Executed action BookShare.Web.Controllers.BookController.ViewComment (BookShare) in 5725.8795ms
+2019-08-28 17:56:12.101 +03:00 [INF] Executed endpoint 'BookShare.Web.Controllers.BookController.ViewComment (BookShare)'
+2019-08-28 17:56:12.104 +03:00 [INF] Request finished in 5757.3493ms 200 application/json; charset=utf-8
+2019-08-28 17:56:12.106 +03:00 [INF] Connection id "0HLPBOV970F38", Request id "0HLPBOV970F38:00000002": the application completed without reading the entire request body.
