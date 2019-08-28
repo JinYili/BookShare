@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using BookShare.Cache;
 using BookShare.Web.Models;
 using BookShare.Web.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Caching.Memory;
-using Newtonsoft.Json;
 
 namespace BookShare.Web.Controllers
 {
@@ -20,16 +18,22 @@ namespace BookShare.Web.Controllers
         private readonly IBookService _bookService;
         private readonly ICommentService _commentService;
         private readonly IMemoryCache _memoryCache;
-        private readonly MemoryCacheEntryOptions _cacheEntryOption; 
+        private readonly MemoryCacheEntryOptions _cacheEntryOption;
+        private readonly IDistributedCache _distributedCache;
 
-        public BookController(IBookService bookService, ICommentService commentService, IMemoryCache memoryCache)
+        public BookController(IBookService bookService, ICommentService commentService, 
+                IMemoryCache memoryCache, IDistributedCache distributedCache)
         {
             _bookService = bookService;
             _commentService = commentService;
             _memoryCache = memoryCache;
 
+            // In memory and redis cache option 
             _cacheEntryOption.SetAbsoluteExpiration(TimeSpan.FromSeconds(600)).SetSlidingExpiration(TimeSpan.FromSeconds(30));
             _cacheEntryOption.RegisterPostEvictionCallback(FillCacheCallBack, this);
+
+            // redis cache
+            _distributedCache = distributedCache;
         }
 
         [HttpGet("All")]
@@ -46,6 +50,25 @@ namespace BookShare.Web.Controllers
                 _memoryCache.Set(CacheEntryConstants.BookOfToday, cachedBook, _cacheEntryOption);
             }
             */
+            
+            //radis cache
+            /*
+            List<Book> cachedBook = new List<Book>();
+            byte[] cachedBookbyte = _distributedCache.Get(CacheEntryConstants.BookOfToday);
+            if (cachedBookbyte == null)
+            {
+                cachedBook = await _bookService.GetAllAsync();
+                var serializedBook = JsonConvert.SerializeObject(cachedBook);
+                byte[] encodedBook = Encoding.UTF8.GetBytes(serializedBook);
+                await _distributedCache.SetAsync(CacheEntryConstants.BookOfToday, encodedBook);
+            }
+            else
+            {
+                string deserializedBook = Encoding.UTF8.GetString(cachedBookbyte);
+                cachedBook = JsonConvert.DeserializeObject<List<Book>>(deserializedBook);
+            }
+            */
+
             return Json(cachedBook);   
         }
 

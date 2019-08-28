@@ -56,11 +56,18 @@ namespace BookShare.Web
                 options.RespectBrowserAcceptHeader = true; // false by default
             });
 
-            /*In memory Cache*/
-            services.AddMemoryCache();
+            //In memory Cache
+            //services.AddMemoryCache();
 
+            // redis cache
+            /*
+            services.AddDistributedRedisCache(options =>
+            {
+                options.Configuration = "localhost:6379";
+                options.InstanceName = "redis-for-book";
 
-
+            });
+            */
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
