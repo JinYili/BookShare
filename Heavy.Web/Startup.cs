@@ -57,13 +57,13 @@ namespace BookShare.Web
             });
 
             //In memory Cache
-            //services.AddMemoryCache();
+            services.AddMemoryCache();
 
-            // redis cache
+            // redis cache  port number on 6379
             /*
             services.AddDistributedRedisCache(options =>
             {
-                options.Configuration = "localhost:6379";
+                options.Configuration = "localhost"; 
                 options.InstanceName = "redis-for-book";
 
             });

@@ -28,6 +28,7 @@ namespace BookShare.Web.Controllers
             _commentService = commentService;
             _memoryCache = memoryCache;
 
+            _cacheEntryOption = new MemoryCacheEntryOptions();
             // In memory and redis cache option 
             _cacheEntryOption.SetAbsoluteExpiration(TimeSpan.FromSeconds(600)).SetSlidingExpiration(TimeSpan.FromSeconds(30));
             _cacheEntryOption.RegisterPostEvictionCallback(FillCacheCallBack, this);
@@ -35,7 +36,13 @@ namespace BookShare.Web.Controllers
             // redis cache
             _distributedCache = distributedCache;
         }
-
+        /*
+        public BookController(IBookService bookService, ICommentService commentService)
+        {
+            _bookService = bookService;
+            _commentService = commentService;
+        }
+        */
         [HttpGet("All")]
         public async Task<JsonResult> ListAll()
         {

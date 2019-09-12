@@ -4,6 +4,9 @@ using BookShare.Web.Models;
 using BookShare.Web.Services;
 using BookShareXunitTest.API.UnitTests;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Distributed;
+using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Text.Encodings.Web;
@@ -23,7 +26,11 @@ namespace BookShareXunitTest
             BookContext dbContext = DbContextMocker.GetDbContext(nameof(BookControllerTests));
             _bookService = new BookEfService(dbContext);
             _CommentService = new CommentEfService(dbContext);
-            _controller = new BookController(_bookService, _CommentService);
+            var memoryCache = new MemoryCache(new MemoryCacheOptions());
+            IOptions<MemoryDistributedCacheOptions> someOptions = Options.Create<MemoryDistributedCacheOptions>(new MemoryDistributedCacheOptions());
+            MemoryDistributedCache distributedCache = new MemoryDistributedCache(someOptions);
+
+            _controller = new BookController(_bookService, _CommentService, memoryCache, distributedCache);
         }
 
         [Fact]
